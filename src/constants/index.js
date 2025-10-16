@@ -1,0 +1,161 @@
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
+import certificate1 from "../assets/certificates/certificate-1.png";
+import certificate2 from "../assets/certificates/certificate-2.png";
+import certificate3 from "../assets/certificates/certificate-3.png";
+import certificate4 from "../assets/certificates/certificate-4.png";
+
+export const CONTENT = `Zajmuję się tworzeniem nowoczesnych aplikacji, głównie z wykorzystaniem technologii takich jak React, JavaScript, Node.js, Python i Django. W pracy skupiam się na budowaniu intuicyjnych interfejsów użytkownika, wydajnych struktur aplikacji i przejrzystym kodzie. Lubię łączyć estetykę frontendu z logiką backendu, projektując rozwiązania, które są jednocześnie funkcjonalne i przyjemne w użyciu. Stale poszerzam swoją wiedzę o nowe narzędzia i dobre praktyki w świecie web developmentu, a moim celem jest tworzenie aplikacji, które realnie rozwiązują problemy i dostarczają świetne doświadczenia użytkownikom.`;
+
+export const ABOUT_TEXT = `Programowaniem zajmuję się od kilku lat, zaczynając od nauki w technikum informatycznym, gdzie zdobyłem solidne podstawy w HTML, CSS i JavaScript. Od tamtej pory cały czas rozwijam swoje umiejętności jako fullstack developer, uczestnicząc w kursach online, m.in. CS50 i Meta, oraz eksperymentując z nowymi rozwiązaniami. Lubię tworzyć fajne i użyteczne aplikacje, które sprawiają radość użytkownikom. Mam również zamiłowanie do sztucznej inteligencji i stale poszerzam swoją wiedzę w tym obszarze. Obecnie studiuję informatykę, łącząc naukę z praktycznym tworzeniem projektów.`;
+
+export const EXPERIENCES = [
+  {
+    year: "10/2025 - Obecnie",
+    role: "Inżynier Informatyki",
+    company: "Uniwersytet WSB Merito w Warszawie",
+    description: `Na kierunku Inżyniera Informatyki uczę się wielu języków programowania, m.in. Python i JavaScript, poznaję frameworki React, Angular, Node.js, Django. Są również elementy baz danych oraz sztucznej inteligencji.`,
+    technologies: [
+      "Javascript",
+      "React",
+      "Next.js",
+      "mongoDB",
+      "Python",
+      "Angular",
+      "SQL",
+    ],
+  },
+  {
+    year: "08/2025 - Obecnie",
+    role: "Kurs Meta Front-End Developer",
+    company: "Meta",
+    description: `W tym kursie rozwijam swoje umiejętności w tworzeniu aplikacji webowych. Tworzę głównie strony w React, projektuję interfejsy w Figma oraz zarządzam kodem za pomocą Git. Kurs łączy teorię z praktyką, m.in. w projektach Capstone i wdrażaniu procesów CI/CD.`,
+    technologies: ["HTML", "CSS", "JavaScript", "React", "UI/UX", "Git", "CI/CD"],
+  },
+  {
+    year: "09/2024 - 01/2025",
+    role: "CS50 Web Programming with Python and JavaScript",
+    company: "HarvardX",
+    description: `Kurs z inicjatywy Uniwersytetu Harvardu obejmujący tworzenie aplikacji webowych z użyciem Python (Django), JavaScript (React) oraz baz danych. Kurs skupiał się na tworzeniu RESTful API, bezpieczeństwie aplikacji oraz praktykach CI/CD. Wszystkie projekty z kursu są na moim GitHubie`,
+    technologies: [
+      "Python",
+      "Django",
+      "JavaScript",
+      "React",
+      "Bootstrap",
+    ],
+  },
+  {
+    year: "2021 - 2025",
+    role: "Technik Informatyk",
+    company: "Augustowskie Centrum Edukacyjne",
+    description: `Podczas nauki zdobyłem umiejętności w tworzeniu aplikacji internetowych, programowaniu (HTML, CSS, JavaScript) oraz administrowaniu sieciami komputerowymi. Uczyłem się także pracy z bazami danych i systemami operacyjnymi.`,
+    technologies: [
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "PHP",
+      "MySQL",
+      "C++",
+    ],
+  },
+];
+
+export const PROJECTS = [
+  {
+    title: "Quizz App",
+    image: project1,
+    description:
+      "Aplikacja do tworzenia, rozwiązywania quizów, opcja zalogowania, wylogowania, zakładania konta. Był to finalny projekt w kursie od HarvardX, stworzony od podstaw samemu. Nie ma zbyt dużo stylowania, gdyż głównie skupiłem się na funkcjonalności aplikacji, style zrobione przy użyciu Bootstrapa. Wszystkie pliki z projektu na moim GitHubie.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "React",
+      "Python",
+      "Django",
+      "Bootstrap",
+    ],
+  },
+  {
+    title: "Fetch Data App",
+    image: project2,
+    description:
+      "Aplikacja do fetchowania danych, zadanie z kursu od Meta. Bez stylowania, na miejscu tego projektu pojawi się inny lepszy. Wszystkie pliki z projektu na moim GitHubie.",
+    technologies: ["HTML", "CSS", "React", "API"],
+  },
+  {
+    title: "Portfolio",
+    image: project3,
+    description:
+      "Moje pierwsze portfolio (aktualnie oglądasz moje drugie), stworzone przy użyciu czystego JavaScripta, HTML i CSS'a bez żadnych Frameworków, portfolio w pełni responsywne na każdym urządzeniu. Cały projekt można zobaczyć na GitHubie.",
+    technologies: ["HTML", "CSS", "JavaScript",],
+  },
+  {
+    title: "Serwis Społecznościowy",
+    image: project4,
+    description:
+      "Aplikacja z tworzeniem użytkownika, możliwość dodawania postów, like'owania, dodawania i usuwania komentarzy. Aplikacja stworzona na zaliczenie podaczas kursu HarvardX. Aplikacja głownie skupiona na funkcjonalości, stylowane za pomocą Bootstrap. Pliki z projektu są dostępne na moim GitHubie.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Django",
+      "Python", 
+      "Bootstrap",
+    ],
+  },
+];
+
+export const CERTIFICATES = [
+  {
+    title: "Certyfikat CS50W Web Programming with Python and JavaScript",
+    image: certificate1,
+    description:
+      "Certyfikat z HarvardX, bardzo praktyczne zadania i projekty, większość z użyciem Pythona i Reacta, również dużo o bezpieczeństwie aplikacji i CI/CD, wszystkie pliki z projektów można znaleźć na moim profilu GitHub.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "React",
+      "Python",
+      "Django",
+      "Bootstrap",
+      "CI/CD",
+    ],
+  },
+  {
+    title: "Meta React",
+    image: certificate2,
+    description:
+      "Specjalizacja zdobyta od Meta, większość materiału to praktyka, sam React bez zbędnych informacji. Specjalizacja zawierała dwa kursy Meta Basics i Meta Advanced które trzeba było ukończyć, aby zdobyć specjalizacje.",
+    technologies: ["HTML", "CSS", "React", "JavaScript"],
+  },
+  {
+    title: "Meta Advanced",
+    image: certificate3,
+    description:
+      "Certyfikat potrzebny do specjalizacji Meta React, obszerny kurs, wiele nowych informacji i pracy z API.",
+    technologies: ["HTML", "CSS", "JavaScript", "API", "React", "Bootstrap"],
+  },
+  {
+    title: "GenAI Job Simulation",
+    image: certificate4,
+    description:
+      "Z zamiłowania do AI, symulacja pracy gdzie tworzony był bot AI do analizy finansów.",
+    technologies: [
+      "AI",
+      "LLM",
+      "GenAI"
+    ],
+  },
+];
+
+export const CONTACT = {
+  address: "Warszawa",
+  phoneNo: "+48 603 121 889",
+  github: "GitHub",
+  linkedin: "LinkedIn",
+  email: "jawor12325@gmail.com",
+};
