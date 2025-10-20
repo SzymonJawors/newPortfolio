@@ -79,11 +79,11 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Fetch Data App",
+    title: "AI CHAT Clone",
     image: project2,
     description:
-      "Aplikacja do fetchowania danych, zadanie z kursu od Meta. Bez stylowania, na miejscu tego projektu pojawi się inny lepszy. Wszystkie pliki z projektu na moim GitHubie.",
-    technologies: ["HTML", "CSS", "React", "API"],
+      "Aplikacja Clone AI CHAT, fetchuje API AI z Gemini. Chat normalnie funkcjonuje odpowiada na pytania.Trzeba posiadać swój API, wszystkie informacje na moim GitHubie.",
+    technologies: ["HTML", "CSS", "React", "API", "FETCH"],
   },
   {
     title: "Portfolio",
