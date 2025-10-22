@@ -6,6 +6,7 @@ import certificate1 from "../assets/certificates/certificate-1.png";
 import certificate2 from "../assets/certificates/certificate-2.png";
 import certificate3 from "../assets/certificates/certificate-3.png";
 import certificate4 from "../assets/certificates/certificate-4.png";
+import certificate5 from "../assets/certificates/certificate-5.png";
 
 export const CONTENT = `Zajmuję się tworzeniem nowoczesnych aplikacji, głównie z wykorzystaniem technologii takich jak React, JavaScript, Node.js, Python i Django. W pracy skupiam się na budowaniu intuicyjnych interfejsów użytkownika, wydajnych struktur aplikacji i przejrzystym kodzie. Lubię łączyć estetykę frontendu z logiką backendu, projektując rozwiązania, które są jednocześnie funkcjonalne i przyjemne w użyciu. Stale poszerzam swoją wiedzę o nowe narzędzia i dobre praktyki w świecie web developmentu, a moim celem jest tworzenie aplikacji, które realnie rozwiązują problemy i dostarczają świetne doświadczenia użytkownikom.`;
 
@@ -32,7 +33,15 @@ export const EXPERIENCES = [
     role: "Kurs Meta Front-End Developer",
     company: "Meta",
     description: `W tym kursie rozwijam swoje umiejętności w tworzeniu aplikacji webowych. Tworzę głównie strony w React, projektuję interfejsy w Figma oraz zarządzam kodem za pomocą Git. Kurs łączy teorię z praktyką, m.in. w projektach Capstone i wdrażaniu procesów CI/CD.`,
-    technologies: ["HTML", "CSS", "JavaScript", "React", "UI/UX", "Git", "CI/CD"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "UI/UX",
+      "Git",
+      "CI/CD",
+    ],
   },
   {
     year: "09/2024 - 01/2025",
@@ -90,7 +99,7 @@ export const PROJECTS = [
     image: project3,
     description:
       "Moje pierwsze portfolio (aktualnie oglądasz moje drugie), stworzone przy użyciu czystego JavaScripta, HTML i CSS'a bez żadnych Frameworków, portfolio w pełni responsywne na każdym urządzeniu. Cały projekt można zobaczyć na GitHubie.",
-    technologies: ["HTML", "CSS", "JavaScript",],
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Serwis Społecznościowy",
@@ -103,7 +112,7 @@ export const PROJECTS = [
       "JavaScript",
       "React",
       "Django",
-      "Python", 
+      "Python",
       "Bootstrap",
     ],
   },
@@ -111,8 +120,25 @@ export const PROJECTS = [
 
 export const CERTIFICATES = [
   {
-    title: "Certyfikat CS50W Web Programming with Python and JavaScript",
+    title: "Meta Front End Developer",
     image: certificate1,
+    description: `Program obejmował naukę HTML, CSS, JavaScript, React, Git, oraz zasad responsywnego projektowania i dostępności.
+Podczas kursu realizowałem praktyczne projekty (część z nich jest na GitHubie), w tym budowę w pełni funkcjonalnych aplikacji front-endowych z wykorzystaniem frameworka React oraz integrację z API.`,
+    technologies: [
+      "HTML",
+      "CSS",
+      "SCSS",
+      "React",
+      "JavaScript",
+      "Git",
+      "API",
+      "UI/UX",
+    ],
+  },
+  {
+    title:
+      "Certyfikat CS50W Web Programming with Python and JavaScript",
+    image: certificate2,
     description:
       "Certyfikat z HarvardX, bardzo praktyczne zadania i projekty, większość z użyciem Pythona i Reacta, również dużo o bezpieczeństwie aplikacji i CI/CD, wszystkie pliki z projektów można znaleźć na moim profilu GitHub.",
     technologies: [
@@ -127,28 +153,31 @@ export const CERTIFICATES = [
   },
   {
     title: "Meta React",
-    image: certificate2,
+    image: certificate3,
     description:
       "Specjalizacja zdobyta od Meta, większość materiału to praktyka, sam React bez zbędnych informacji. Specjalizacja zawierała dwa kursy Meta Basics i Meta Advanced które trzeba było ukończyć, aby zdobyć specjalizacje.",
     technologies: ["HTML", "CSS", "React", "JavaScript"],
   },
   {
-    title: "Meta Advanced",
-    image: certificate3,
+    title: "React Advanced",
+    image: certificate4,
     description:
       "Certyfikat potrzebny do specjalizacji Meta React, obszerny kurs, wiele nowych informacji i pracy z API.",
-    technologies: ["HTML", "CSS", "JavaScript", "API", "React", "Bootstrap"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API",
+      "React",
+      "Bootstrap",
+    ],
   },
   {
     title: "GenAI Job Simulation",
-    image: certificate4,
+    image: certificate5,
     description:
       "Z zamiłowania do AI, symulacja pracy gdzie tworzony był bot AI do analizy finansów.",
-    technologies: [
-      "AI",
-      "LLM",
-      "GenAI"
-    ],
+    technologies: ["AI", "LLM", "GenAI"],
   },
 ];
 
