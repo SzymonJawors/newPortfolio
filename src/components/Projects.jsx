@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h1
@@ -29,7 +33,8 @@ const Projects = () => {
                 width={250}
                 height={250}
                 alt={project.title}
-                className="mb-6 rounded"
+                className="mb-6 rounded transition-transform duration-300 hover:scale-110 cursor-pointer"
+                onClick={() => setSelectedProject(project.image)}
               />
             </motion.div>
             <motion.div
@@ -56,6 +61,22 @@ const Projects = () => {
           </div>
         ))}
       </div>
+            {selectedProject && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+          onClick={() => setSelectedProject(null)}
+        >
+          <motion.img
+            src={selectedProject}
+            alt="Powiększony projekt"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="max-w-[90%] max-h-[90%] rounded-lg shadow-lg cursor-pointer"
+          />
+        </div>
+      )}
     </div>
   );
 };

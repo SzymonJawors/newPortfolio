@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { CERTIFICATES } from "../constants";
 import { motion } from "framer-motion";
 
 const Certifications = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h1
@@ -12,12 +15,10 @@ const Certifications = () => {
       >
         Certyfikaty
       </motion.h1>
+
       <div>
         {CERTIFICATES.map((certificate, index) => (
-          <div
-            key={index}
-            className="mb-8 flex flex-wrap lg:justify-center"
-          >
+          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -29,21 +30,19 @@ const Certifications = () => {
                 width={230}
                 height={230}
                 alt={certificate.title}
-                className="mb-6 rounded"
+                className="mb-6 rounded transition-transform duration-300 hover:scale-110 cursor-pointer"
+                onClick={() => setSelectedImage(certificate.image)}
               />
             </motion.div>
+
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">
-                {certificate.title}
-              </h6>
-              <p className="mb-4 text-neutral-400">
-                {certificate.description}
-              </p>
+              <h6 className="mb-2 font-semibold">{certificate.title}</h6>
+              <p className="mb-4 text-neutral-400">{certificate.description}</p>
               {certificate.technologies.map((tech, index) => (
                 <span
                   key={index}
@@ -56,6 +55,22 @@ const Certifications = () => {
           </div>
         ))}
       </div>
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+          onClick={() => setSelectedImage(null)}
+        >
+          <motion.img
+            src={selectedImage}
+            alt="Powiększony certyfikat"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="max-w-[90%] max-h-[90%] rounded-lg shadow-lg cursor-pointer"
+          />
+        </div>
+      )}
     </div>
   );
 };
