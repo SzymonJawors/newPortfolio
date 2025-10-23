@@ -2,6 +2,8 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
+import project6 from "../assets/projects/project-6.png";
 import certificate1 from "../assets/certificates/certificate-1.png";
 import certificate2 from "../assets/certificates/certificate-2.png";
 import certificate3 from "../assets/certificates/certificate-3.png";
@@ -29,7 +31,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: "08/2025 - Obecnie",
+    year: "06/2025 - 10/2025",
     role: "Kurs Meta Front-End Developer",
     company: "Meta",
     description: `W tym kursie rozwijam swoje umiejętności w tworzeniu aplikacji webowych. Tworzę głównie strony w React, projektuję interfejsy w Figma oraz zarządzam kodem za pomocą Git. Kurs łączy teorię z praktyką, m.in. w projektach Capstone i wdrażaniu procesów CI/CD.`,
@@ -86,6 +88,7 @@ export const PROJECTS = [
       "Django",
       "Bootstrap",
     ],
+    link: `https://github.com/SzymonJawors/QuizzApp-project`,
   },
   {
     title: "AI CHAT Clone",
@@ -93,17 +96,35 @@ export const PROJECTS = [
     description:
       "Aplikacja Clone AI CHAT, fetchuje API AI z Gemini. Chat normalnie funkcjonuje odpowiada na pytania.Trzeba posiadać swój API, wszystkie informacje na moim GitHubie.",
     technologies: ["HTML", "CSS", "React", "API", "FETCH"],
+    link: `https://github.com/SzymonJawors/AIclone`,
+  },
+    {
+    title: "Filmowa Baza Danych",
+    image: project3,
+    description:
+      "Aplikacja która wyświetla baze danych filmów przy użyciu API ze strony themoviedb.org (trzeba utworzyć swoje API na stronie aby aplikacja działała). W aplikacji można wyszukiwać wszystkie filmy oraz dodawać je do polubionych - dla których jest podstrona gdzie je wszystkie widać i można je również usuwać.",
+    technologies: ["HTML", "CSS", "JavaScript", "API", "React", "Router"],
+    link: `https://github.com/SzymonJawors/Film-data-base`,
   },
   {
     title: "Portfolio",
-    image: project3,
+    image: project4,
     description:
       "Moje pierwsze portfolio (aktualnie oglądasz moje drugie), stworzone przy użyciu czystego JavaScripta, HTML i CSS'a bez żadnych Frameworków, portfolio w pełni responsywne na każdym urządzeniu. Cały projekt można zobaczyć na GitHubie.",
     technologies: ["HTML", "CSS", "JavaScript"],
+    link: `https://github.com/SzymonJawors/my-portfolio`,
+  },
+    {
+    title: "To Do List",
+    image: project5,
+    description:
+      "Prosta aplikajca To-Do, można dodawać cele, odznaczać je oraz usuwać. Stworzona przy użyciu Reacta i Tailwinda.",
+    technologies: ["HTML", "CSS", "JavaScript", 'React', 'Tailwind'],
+    link: `https://github.com/SzymonJawors/ToDoList`,
   },
   {
     title: "Serwis Społecznościowy",
-    image: project4,
+    image: project6,
     description:
       "Aplikacja z tworzeniem użytkownika, możliwość dodawania postów, like'owania, dodawania i usuwania komentarzy. Aplikacja stworzona na zaliczenie podaczas kursu HarvardX. Aplikacja głownie skupiona na funkcjonalości, stylowane za pomocą Bootstrap. Pliki z projektu są dostępne na moim GitHubie.",
     technologies: [
@@ -115,6 +136,7 @@ export const PROJECTS = [
       "Python",
       "Bootstrap",
     ],
+    link: `https://github.com/SzymonJawors/Network-project`,
   },
 ];
 

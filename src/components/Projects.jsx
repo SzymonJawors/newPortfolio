@@ -47,7 +47,7 @@ const Projects = () => {
                 {project.title}
               </h6>
               <p className="mb-4 text-neutral-400">
-                {project.description} <a href="https://github.com/SzymonJawors?tab=repositories" target="_blank" rel="noopener noreferrer" className="border-b">KLIK.</a>
+                {project.description} <a href={project.link} target="_blank" rel="noopener noreferrer" className="border-b">KLIK.</a>
               </p>
               {project.technologies.map((tech, index) => (
                 <span
