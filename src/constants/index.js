@@ -76,19 +76,18 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Quizz App",
+    title: "Netflix Clone",
     image: project1,
     description:
-      "Aplikacja do tworzenia, rozwiązywania quizów, opcja zalogowania, wylogowania, zakładania konta. Był to finalny projekt w kursie od HarvardX, stworzony od podstaw samemu. Nie ma zbyt dużo stylowania, gdyż głównie skupiłem się na funkcjonalności aplikacji, style zrobione przy użyciu Bootstrapa. Wszystkie pliki z projektu na moim GitHubie.",
+      "Klon Netflixa stworzony w React i Vite. Aplikacja pozwala na rejestrację, logowanie i przeglądanie trailerów filmów. Dane użytkowników przechowywane są w Firebase. Projekt jest hostowany na Vercel i można go przetestować online. Więcej informacji na GitHubie.",
     technologies: [
-      "HTML",
       "CSS",
+      "TMDb API",
+      "Firebase",
+      "JavaScript",
       "React",
-      "Python",
-      "Django",
-      "Bootstrap",
     ],
-    link: `https://github.com/SzymonJawors/QuizzApp-project`,
+    link: `https://github.com/SzymonJawors/netflix-clone`,
   },
   {
     title: "AI CHAT Clone",
@@ -123,12 +122,11 @@ export const PROJECTS = [
     link: `https://github.com/SzymonJawors/ToDoList`,
   },
   {
-    title: "Serwis Społecznościowy",
+    title: "Quizz App",
     image: project6,
     description:
-      "Aplikacja z tworzeniem użytkownika, możliwość dodawania postów, like'owania, dodawania i usuwania komentarzy. Aplikacja stworzona na zaliczenie podaczas kursu HarvardX. Aplikacja głownie skupiona na funkcjonalości, stylowane za pomocą Bootstrap. Pliki z projektu są dostępne na moim GitHubie.",
+      "Aplikacja do tworzenia, rozwiązywania quizów, opcja zalogowania, wylogowania, zakładania konta. Był to finalny projekt w kursie od HarvardX, stworzony od podstaw samemu. Nie ma zbyt dużo stylowania, gdyż głównie skupiłem się na funkcjonalności aplikacji, style zrobione przy użyciu Bootstrapa. Wszystkie pliki z projektu na moim GitHubie.",
     technologies: [
-      "HTML",
       "CSS",
       "JavaScript",
       "React",
@@ -136,7 +134,7 @@ export const PROJECTS = [
       "Python",
       "Bootstrap",
     ],
-    link: `https://github.com/SzymonJawors/Network-project`,
+    link: `https://github.com/SzymonJawors/QuizzApp-project`,
   },
 ];
 
