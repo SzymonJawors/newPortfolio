@@ -9,6 +9,7 @@ import certificate2 from "../assets/certificates/certificate-2.png";
 import certificate3 from "../assets/certificates/certificate-3.png";
 import certificate4 from "../assets/certificates/certificate-4.png";
 import certificate5 from "../assets/certificates/certificate-5.png";
+import certificate6 from "../assets/certificates/certificate-6.png";
 
 export const CONTENT = `Zajmuję się tworzeniem nowoczesnych aplikacji, głównie z wykorzystaniem technologii takich jak React, JavaScript, Node.js, Python i Django. W pracy skupiam się na budowaniu intuicyjnych interfejsów użytkownika, wydajnych struktur aplikacji i przejrzystym kodzie. Lubię łączyć estetykę frontendu z logiką backendu, projektując rozwiązania, które są jednocześnie funkcjonalne i przyjemne w użyciu. Stale poszerzam swoją wiedzę o nowe narzędzia i dobre praktyki w świecie web developmentu, a moim celem jest tworzenie aplikacji, które realnie rozwiązują problemy i dostarczają świetne doświadczenia użytkownikom.`;
 
@@ -24,9 +25,7 @@ export const EXPERIENCES = [
       "Javascript",
       "React",
       "Next.js",
-      "mongoDB",
       "Python",
-      "Angular",
       "SQL",
     ],
   },
@@ -41,7 +40,6 @@ export const EXPERIENCES = [
       "JavaScript",
       "React",
       "UI/UX",
-      "Git",
       "CI/CD",
     ],
   },
@@ -82,7 +80,7 @@ export const PROJECTS = [
       "Klon Netflixa stworzony w React i Vite. Aplikacja pozwala na rejestrację, logowanie i przeglądanie trailerów filmów. Dane użytkowników przechowywane są w Firebase. Projekt jest hostowany na Vercel i można go przetestować online. Więcej informacji na GitHubie.",
     technologies: [
       "CSS",
-      "TMDb API",
+      "TMDbAPI",
       "Firebase",
       "JavaScript",
       "React",
@@ -114,12 +112,12 @@ export const PROJECTS = [
     link: `https://github.com/SzymonJawors/my-portfolio`,
   },
     {
-    title: "To Do List",
+    title: "Thinkboard",
     image: project5,
     description:
-      "Prosta aplikajca To-Do, można dodawać cele, odznaczać je oraz usuwać. Stworzona przy użyciu Reacta i Tailwinda.",
-    technologies: ["HTML", "CSS", "JavaScript", 'React', 'Tailwind'],
-    link: `https://github.com/SzymonJawors/ToDoList`,
+      "Aplikacja Fullstack, umożliwiająca tworzenie notatek, zapisywanie ich w bazie danych oraz zarządzanie nimi (edycja, usuwanie). Backend stworzony w Node.js z użyciem Express.js i MongoDB, frontend w React z wykorzystaniem Tailwind CSS oraz daisyUI.",
+    technologies: ["MongoDB", "Node.js", "Express.js", 'React', 'Tailwind'],
+    link: `https://github.com/SzymonJawors/Thinkboard`,
   },
   {
     title: "Quizz App",
@@ -127,7 +125,6 @@ export const PROJECTS = [
     description:
       "Aplikacja do tworzenia, rozwiązywania quizów, opcja zalogowania, wylogowania, zakładania konta. Był to finalny projekt w kursie od HarvardX, stworzony od podstaw samemu. Nie ma zbyt dużo stylowania, gdyż głównie skupiłem się na funkcjonalności aplikacji, style zrobione przy użyciu Bootstrapa. Wszystkie pliki z projektu na moim GitHubie.",
     technologies: [
-      "CSS",
       "JavaScript",
       "React",
       "Django",
@@ -146,11 +143,9 @@ export const CERTIFICATES = [
 Podczas kursu realizowałem praktyczne projekty (część z nich jest na GitHubie), w tym budowę w pełni funkcjonalnych aplikacji front-endowych z wykorzystaniem frameworka React oraz integrację z API.`,
     technologies: [
       "HTML",
-      "CSS",
       "SCSS",
       "React",
       "JavaScript",
-      "Git",
       "API",
       "UI/UX",
     ],
@@ -184,7 +179,6 @@ Podczas kursu realizowałem praktyczne projekty (część z nich jest na GitHubi
     description:
       "Certyfikat potrzebny do specjalizacji Meta React, obszerny kurs, wiele nowych informacji i pracy z API.",
     technologies: [
-      "HTML",
       "CSS",
       "JavaScript",
       "API",
@@ -192,9 +186,22 @@ Podczas kursu realizowałem praktyczne projekty (część z nich jest na GitHubi
       "Bootstrap",
     ],
   },
+    {
+    title: "IBM Node.js & MongoDB: Developing Backend Database Applications",
+    image: certificate5,
+    description:
+      "Specjalizacja IBM obejmująca tworzenie aplikacji backendowych w Expressie i Node.js, obsługę REST API oraz pracę z bazami danych MongoDB.",
+    technologies: [
+      "Express.js",
+      "Node.js",
+      "JavaScript",
+      "API",
+      "MongoDB",
+    ],
+  },
   {
     title: "GenAI Job Simulation",
-    image: certificate5,
+    image: certificate6,
     description:
       "Z zamiłowania do AI, symulacja pracy gdzie tworzony był bot AI do analizy finansów.",
     technologies: ["AI", "LLM", "GenAI"],
