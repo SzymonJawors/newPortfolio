@@ -99,9 +99,9 @@ export const PROJECTS = [
     title: "Filmowa Baza Danych",
     image: project3,
     description:
-      "Aplikacja która wyświetla baze danych filmów przy użyciu API ze strony themoviedb.org (trzeba utworzyć swoje API na stronie aby aplikacja działała). W aplikacji można wyszukiwać wszystkie filmy oraz dodawać je do polubionych - dla których jest podstrona gdzie je wszystkie widać i można je również usuwać.",
-    technologies: ["HTML", "CSS", "JavaScript", "API", "React", "Router"],
-    link: `https://github.com/SzymonJawors/Film-data-base`,
+      "Aplikacja która wyświetla baze danych filmów przy użyciu API. Na bazie wyszukiwań użytkownika, w sekcji Trending wyświetla te, które są najczęściej wpisywane. Aplikacja jest postawiona na Vercelu i można ją wypróbować. Więcej informacji na GitHubie.",
+    technologies: ["JavaScript", "API", "React", "Tailwind", "Databases"],
+    link: `https://github.com/SzymonJawors/Moviedatabase-trending`,
   },
   {
     title: "Portfolio",
