@@ -4,7 +4,7 @@ import {
   RiJavascriptLine,
 } from "react-icons/ri";
 import { FaPython, FaCss3, FaHtml5 } from "react-icons/fa";
-import { SiDjango } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -43,7 +43,7 @@ const Tech = () => {
           animate="animate"
           className="rounder-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <RiReactjsLine title="React.js" className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -51,7 +51,7 @@ const Tech = () => {
           animate="animate"
           className="rounder-2xl border-4 border-neutral-800 p-4"
         >
-          <RiJavascriptLine className="text-7xl text-yellow-400" />
+          <RiJavascriptLine title="JavaScript" className="text-7xl text-yellow-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(1.5)}
@@ -59,7 +59,7 @@ const Tech = () => {
           animate="animate"
           className="rounder-2xl border-4 border-neutral-800 p-4"
         >
-          <RiNodejsLine className="text-7xl text-green-400" />
+          <RiNodejsLine title="Node.js" className="text-7xl text-green-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2.1)}
@@ -67,7 +67,7 @@ const Tech = () => {
           animate="animate"
           className="rounder-2xl border-4 border-neutral-800 p-4"
         >
-          <FaPython className="text-7xl text-blue-950" />
+          <FaPython title="Python" className="text-7xl text-blue-950" />
         </motion.div>
         <motion.div
           variants={iconVariants(2.3)}
@@ -75,7 +75,7 @@ const Tech = () => {
           animate="animate"
           className="rounder-2xl border-4 border-neutral-800 p-4"
         >
-          <SiDjango className="text-7xl text-green-800" />
+          <SiExpress title="Express.js" className="text-7xl text-green-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(1.8)}
@@ -83,7 +83,7 @@ const Tech = () => {
           animate="animate"
           className="rounder-2xl border-4 border-neutral-800 p-4"
         >
-          <FaCss3 className="text-7xl text-blue-400" />
+          <FaCss3 title="CSS" className="text-7xl text-blue-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(1.9)}
@@ -91,7 +91,7 @@ const Tech = () => {
           animate="animate"
           className="rounder-2xl border-4 border-neutral-800 p-4"
         >
-          <FaHtml5 className="text-7xl text-orange-400" />
+          <FaHtml5 title="HTML" className="text-7xl text-orange-400" />
         </motion.div>
       </motion.div>
     </div>

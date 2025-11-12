@@ -88,12 +88,11 @@ export const PROJECTS = [
     link: `https://github.com/SzymonJawors/netflix-clone`,
   },
   {
-    title: "AI CHAT Clone",
+    title: "JaworAI",
     image: project2,
-    description:
-      "Aplikacja Clone AI CHAT, fetchuje API AI z Gemini. Chat normalnie funkcjonuje odpowiada na pytania.Trzeba posiadać swój API, wszystkie informacje na moim GitHubie.",
-    technologies: ["HTML", "CSS", "React", "API", "FETCH"],
-    link: `https://github.com/SzymonJawors/AIclone`,
+    description:"Nowoczesna aplikacja webowa z inteligentnym asystentem AI, umożliwiająca rejestrację, logowanie i interakcję z AI. W trybie premium użytkownicy mają dostęp do rozszerzonych funkcji AI. Projekt stworzony w React, Node.js i Express, hostowany na Vercel. Więcej informacji na GitHubie.",
+    technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "Clerk"],
+    link: `https://github.com/SzymonJawors/JaworAI`,
   },
     {
     title: "Filmowa Baza Danych",
