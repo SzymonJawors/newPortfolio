@@ -11,9 +11,9 @@ import certificate4 from "../assets/certificates/certificate-4.png";
 import certificate5 from "../assets/certificates/certificate-5.png";
 import certificate6 from "../assets/certificates/certificate-6.png";
 
-export const CONTENT = `Zajmuję się tworzeniem nowoczesnych aplikacji, głównie z wykorzystaniem technologii takich jak React, JavaScript, Node.js, Python i Django. W pracy skupiam się na budowaniu intuicyjnych interfejsów użytkownika, wydajnych struktur aplikacji i przejrzystym kodzie. Lubię łączyć estetykę frontendu z logiką backendu, projektując rozwiązania, które są jednocześnie funkcjonalne i przyjemne w użyciu. Stale poszerzam swoją wiedzę o nowe narzędzia i dobre praktyki w świecie web developmentu, a moim celem jest tworzenie aplikacji, które realnie rozwiązują problemy i dostarczają świetne doświadczenia użytkownikom.`;
+export const CONTENT = `Tworzę nowoczesne aplikacje webowe w React, JavaScript i Node.js, a Pythona wykorzystuję głównie do pracy z AI, automatyzacją i narzędziami backendowymi. Łączę intuicyjne interfejsy z solidną logiką po stronie serwera, dbając o wydajność i przejrzysty kod. Stale rozwijam swoje umiejętności w obszarze sztucznej inteligencji i projektuję rozwiązania, które realnie ułatwiają użytkownikom pracę.`;
 
-export const ABOUT_TEXT = `Programowaniem zajmuję się od kilku lat, zaczynając od nauki w technikum informatycznym, gdzie zdobyłem solidne podstawy w HTML, CSS i JavaScript. Od tamtej pory cały czas rozwijam swoje umiejętności jako fullstack developer, uczestnicząc w kursach online, m.in. CS50 i Meta, oraz eksperymentując z nowymi rozwiązaniami. Lubię tworzyć fajne i użyteczne aplikacje, które sprawiają radość użytkownikom. Mam również zamiłowanie do sztucznej inteligencji i stale poszerzam swoją wiedzę w tym obszarze. Obecnie studiuję informatykę, łącząc naukę z praktycznym tworzeniem projektów.`;
+export const ABOUT_TEXT = `Programuję od kilku lat — zaczynałem w technikum, gdzie poznałem podstawy frontendu. Dziś rozwijam się jako fullstack developer, realizując kursy takie jak CS50 i Meta oraz tworząc własne projekty. Interesuję się sztuczną inteligencją i regularnie poszerzam wiedzę w tym obszarze. Studiuję informatykę, łącząc teorię z praktyką.`;
 
 export const EXPERIENCES = [
   {
