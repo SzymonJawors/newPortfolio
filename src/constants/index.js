@@ -86,36 +86,64 @@ export const PROJECTS = [
       "React",
     ],
     link: `https://github.com/SzymonJawors/netflix-clone`,
+    live: `https://netflix-clone-eight-beta-40.vercel.app`,
   },
   {
     title: "JaworAI",
     image: project2,
-    description:"Nowoczesna aplikacja webowa z inteligentnym asystentem AI, umożliwiająca rejestrację, logowanie i interakcję z AI. W trybie premium użytkownicy mają dostęp do rozszerzonych funkcji AI. Projekt stworzony w React, Node.js i Express, hostowany na Vercel. Więcej informacji na GitHubie.",
-    technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "Clerk"],
-    link: `https://github.com/SzymonJawors/JaworAI`,
-  },
-    {
-    title: "Filmowa Baza Danych",
-    image: project3,
     description:
-      "Aplikacja która wyświetla baze danych filmów przy użyciu API. Na bazie wyszukiwań użytkownika, w sekcji Trending wyświetla te, które są najczęściej wpisywane. Aplikacja jest postawiona na Vercelu i można ją wypróbować. Więcej informacji na GitHubie.",
-    technologies: ["JavaScript", "API", "React", "Tailwind", "Databases"],
-    link: `https://github.com/SzymonJawors/Moviedatabase-trending`,
+      "Nowoczesna aplikacja webowa z inteligentnym asystentem AI, umożliwiająca rejestrację, logowanie i interakcję z AI. W trybie premium użytkownicy mają dostęp do rozszerzonych funkcji AI. Projekt stworzony w React, Node.js i Express, hostowany na Vercel. Więcej informacji na GitHubie.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Clerk",
+    ],
+    link: `https://github.com/SzymonJawors/JaworAI`,
+    live: `https://jawor-ai.vercel.app`,
   },
   {
-    title: "Portfolio",
+    title: "HotelMotel - System Rezerwacji Hotelowych",
+    image: project3,
+    description:
+      "HotelMotel to nowoczesna, pełnoprawna aplikacja webowa typu Full-Stack (MERN), umożliwiająca przeglądanie ofert hotelowych, rezerwację pokoi oraz zarządzanie obiektami przez właścicieli. Aplikacja posiada swoje demo na Vercel. Więcej informacji na GitHubie.",
+    technologies: [
+      "React",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+    ],
+    link: `https://github.com/SzymonJawors/HotelMotel`,
+    live: `https://hotel-motel-peach.vercel.app`,
+  },
+  {
+    title: "Filmowa Baza Danych",
     image: project4,
     description:
-      "Moje pierwsze portfolio (aktualnie oglądasz moje drugie), stworzone przy użyciu czystego JavaScripta, HTML i CSS'a bez żadnych Frameworków, portfolio w pełni responsywne na każdym urządzeniu. Cały projekt można zobaczyć na GitHubie.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    link: `https://github.com/SzymonJawors/my-portfolio`,
+      "Aplikacja która wyświetla baze danych filmów przy użyciu API. Na bazie wyszukiwań użytkownika, w sekcji Trending wyświetla te, które są najczęściej wpisywane. Aplikacja jest postawiona na Vercelu i można ją wypróbować. Więcej informacji na GitHubie.",
+    technologies: [
+      "JavaScript",
+      "API",
+      "React",
+      "Tailwind",
+      "Databases",
+    ],
+    link: `https://github.com/SzymonJawors/Moviedatabase-trending`,
+    live: `https://moviedatabase-trending.vercel.app`,
   },
-    {
+  {
     title: "Thinkboard",
     image: project5,
     description:
       "Aplikacja Fullstack, umożliwiająca tworzenie notatek, zapisywanie ich w bazie danych oraz zarządzanie nimi (edycja, usuwanie). Backend stworzony w Node.js z użyciem Express.js i MongoDB, frontend w React z wykorzystaniem Tailwind CSS oraz daisyUI.",
-    technologies: ["MongoDB", "Node.js", "Express.js", 'React', 'Tailwind'],
+    technologies: [
+      "MongoDB",
+      "Node.js",
+      "Express.js",
+      "React",
+      "Tailwind",
+    ],
     link: `https://github.com/SzymonJawors/Thinkboard`,
   },
   {
@@ -185,8 +213,9 @@ Podczas kursu realizowałem praktyczne projekty (część z nich jest na GitHubi
       "Bootstrap",
     ],
   },
-    {
-    title: "IBM Node.js & MongoDB: Developing Backend Database Applications",
+  {
+    title:
+      "IBM Node.js & MongoDB: Developing Backend Database Applications",
     image: certificate5,
     description:
       "Specjalizacja IBM obejmująca tworzenie aplikacji backendowych w Expressie i Node.js, obsługę REST API oraz pracę z bazami danych MongoDB.",

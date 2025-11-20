@@ -3,8 +3,8 @@ import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
-
+  const [selectedProject, setSelectedProject] =
+    useState(null);
 
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -34,7 +34,9 @@ const Projects = () => {
                 height={250}
                 alt={project.title}
                 className="mb-6 rounded transition-transform duration-300 hover:scale-110 cursor-pointer"
-                onClick={() => setSelectedProject(project.image)}
+                onClick={() =>
+                  setSelectedProject(project.image)
+                }
               />
             </motion.div>
             <motion.div
@@ -46,8 +48,29 @@ const Projects = () => {
               <h6 className="mb-2 font-semibold">
                 {project.title}
               </h6>
+              {project.live ? (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs"
+                >
+                  Kliknij by przetestować
+                </a>
+              ) : (
+                ""
+              )}
+
               <p className="mb-4 text-neutral-400">
-                {project.description} <a href={project.link} target="_blank" rel="noopener noreferrer" className="border-b">KLIK.</a>
+                {project.description}{" "}
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-b"
+                >
+                  KLIK.
+                </a>
               </p>
               {project.technologies.map((tech, index) => (
                 <span
@@ -61,7 +84,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-            {selectedProject && (
+      {selectedProject && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
           onClick={() => setSelectedProject(null)}
