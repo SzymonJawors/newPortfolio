@@ -1,12 +1,12 @@
 import aboutImg from "../assets/about.jpg";
-import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
 const About = () => {
+  const { t } = useTranslation();
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="about" className="border-b border-neutral-900 pb-4">
       <h1 className="my-20 text-center text-4xl">
-        O <span className="text-neutral-500">Mnie</span>
+        {t('about.title_main')} <span className="text-neutral-500">{t('about.title_sub')}</span>
       </h1>
       <div className="flex flex-wrap">
         <motion.div
@@ -31,7 +31,7 @@ const About = () => {
         >
           <div className="flex justify-center lg:justify-start">
             <p className="my-2 max-w-xl py-6">
-              {ABOUT_TEXT}
+              {t('about.text')}
             </p>
           </div>
         </motion.div>

@@ -1,4 +1,4 @@
-import { CONTENT } from "../constants";
+import { useTranslation } from "react-i18next";
 import profilePic from "../assets/profile.jpg";
 import { motion } from "framer-motion";
 
@@ -12,6 +12,7 @@ const container = (delay) => ({
 });
 
 const Name = () => {
+  const { t } = useTranslation();
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -39,7 +40,7 @@ const Name = () => {
               animate="visible"
               className="my-2 max-w-xl py-6 font-light tracking-tighter"
             >
-              {CONTENT}
+              {t('hero.text')}
             </motion.p>
           </div>
         </div>
