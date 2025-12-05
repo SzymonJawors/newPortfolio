@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import CV from "/CVpl.pdf";
+import CVen from "/CVen.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RiFileUserLine } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
@@ -8,33 +9,32 @@ import { BsHouse } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentCV = i18n.language === "pl" ? CV : CVen;
 
   const contactDetails = {
     phoneNo: "+48 603 121 889",
     email: "jawor12325@gmail.com",
   };
 
+  const hoverTextGradient = `
+    transition-colors duration-300
+    group-hover:bg-gradient-to-r group-hover:from-pink-300 group-hover:via-slate-500 group-hover:to-purple-500
+    group-hover:bg-clip-text group-hover:text-transparent
+  `;
+
   const itemStyle = `
     my-6 flex items-center justify-center gap-2 text-lg 
-    cursor-pointer transition-all duration-300 
-    hover:bg-gradient-to-r hover:from-pink-300 hover:via-slate-500 hover:to-purple-500 
-    hover:bg-clip-text hover:text-transparent
+    cursor-pointer group
   `;
 
   const linkStyle = `
     flex items-center gap-2 border-b border-neutral-500 pb-1
-    transition-all duration-300 
-    hover:border-transparent 
-    hover:bg-gradient-to-r hover:from-pink-300 hover:via-slate-500 hover:to-purple-500 
-    hover:bg-clip-text hover:text-transparent
+    transition-colors duration-300 group hover:border-transparent
   `;
 
   return (
-    <div
-      id="contact"
-      className="border-b border-neutral-900 pb-20"
-    >
+    <div id="contact" className="border-b border-neutral-900 pb-20">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -45,6 +45,7 @@ const Contact = () => {
       </motion.h1>
 
       <div className="text-center tracking-tighter">
+
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -52,7 +53,9 @@ const Contact = () => {
           className={itemStyle}
         >
           <BsHouse className="text-2xl" />
-          <span>{t("contact.address")}</span>
+          <span className={hoverTextGradient}>
+            {t("contact.address")}
+          </span>
         </motion.div>
 
         <motion.div
@@ -62,21 +65,23 @@ const Contact = () => {
           className={itemStyle}
         >
           <BiPhoneCall className="text-2xl" />
-          <span>{contactDetails.phoneNo}</span>
+          <span className={hoverTextGradient}>
+            {contactDetails.phoneNo}
+          </span>
         </motion.div>
 
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
-          className="my-6 flex justify-center"
+          className="my-6 flex justify-center group"
         >
           <a
             href={`mailto:${contactDetails.email}`}
             className={linkStyle}
           >
             <MdEmail className="text-2xl" />
-            {contactDetails.email}
+            <span className={hoverTextGradient}>{contactDetails.email}</span>
           </a>
         </motion.div>
 
@@ -84,16 +89,16 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
-          className="my-6 flex justify-center"
+          className="my-6 flex justify-center group"
         >
           <a
             href="https://www.linkedin.com/in/szymonjawor"
             target="_blank"
-            className={linkStyle}
             rel="noopener noreferrer"
+            className={linkStyle}
           >
             <FaLinkedin className="text-2xl" />
-            {t("contact.linkedin")}
+            <span className={hoverTextGradient}>{t("contact.linkedin")}</span>
           </a>
         </motion.div>
 
@@ -101,16 +106,16 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
-          className="my-6 flex justify-center"
+          className="my-6 flex justify-center group"
         >
           <a
             href="https://github.com/SzymonJawors?tab=repositories"
             target="_blank"
-            className={linkStyle}
             rel="noopener noreferrer"
+            className={linkStyle}
           >
             <FaGithub className="text-2xl" />
-            {t("contact.github")}
+            <span className={hoverTextGradient}>{t("contact.github")}</span>
           </a>
         </motion.div>
 
@@ -118,18 +123,19 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
-          className="my-6 flex justify-center"
+          className="my-6 flex justify-center group"
         >
           <a
-            href={CV}
+            href={currentCV}
             target="_blank"
             rel="noopener noreferrer"
             className={linkStyle}
           >
             <RiFileUserLine className="text-2xl" />
-            {t("contact.cv_label")}
+            <span className={hoverTextGradient}>{t("contact.cv_label")}</span>
           </a>
         </motion.div>
+
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Logo from "./Logo";
 import CV from "/CVpl.pdf";
+import CVen from "/CVen.pdf";
 import {
   FaLinkedin,
   FaGithub,
@@ -13,6 +14,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const currentCV = i18n.language === "pl" ? CV : CVen;
   const [isMobileMenuOpen, setIsMobileMenuOpen] =
     useState(false);
 
@@ -76,7 +78,7 @@ const Navbar = () => {
           <div className="hidden sm:flex gap-4">
             <a
               title="CV"
-              href={CV}
+              href={currentCV}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-500 transition-colors"
@@ -138,7 +140,7 @@ const Navbar = () => {
 
             <div className="flex sm:hidden gap-6 mt-4 border-t border-neutral-800 pt-6 w-full justify-center">
               <a
-                href={CV}
+                href={currentCV}
                 target="_blank"
                 rel="noopener noreferrer"
               >
