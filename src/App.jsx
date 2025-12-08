@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
+import AiWidget from "./components/AiWidget";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
@@ -24,6 +25,7 @@ const App = () => {
         <Projects />
         <Certifications />
         <Contact />
+        <AiWidget />
       </div>
       <Analytics />
       <SpeedInsights />
