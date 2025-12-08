@@ -18,7 +18,7 @@ const AiWidget = () => {
         `}
       >
         <iframe
-          src="http://localhost:3000"
+          src="https://jawor-ai-widget-bot.vercel.app"
           className="w-full h-full border-none bg-[#0a0a0a]"
           title="Asystent Portfolio"
         />
