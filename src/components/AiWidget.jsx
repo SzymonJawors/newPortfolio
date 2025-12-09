@@ -4,10 +4,10 @@ const AiWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end font-sans">
+    <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end font-sans pointer-events-none">
       <div
         className={`
-          w-[350px] h-[550px] 
+          w-[350px] h-[550px]
           bg-[#0a0a0a] rounded-2xl shadow-2xl border border-[#2a2a3e] overflow-hidden mb-4
           transition-all duration-300 ease-in-out origin-bottom-right
           ${
@@ -30,6 +30,7 @@ const AiWidget = () => {
         className={`
           w-16 h-16 rounded-full shadow-[0_0_15px_rgba(109,40,217,0.5)] flex items-center justify-center text-white
           transition-all duration-300 active:scale-90 hover:shadow-[0_0_25px_rgba(109,40,217,0.8)]
+          pointer-events-auto
           ${
             isOpen
               ? "bg-[#1a1a2e] rotate-90 border border-[#2a2a3e]"
