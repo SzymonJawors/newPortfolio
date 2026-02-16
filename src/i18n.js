@@ -70,9 +70,9 @@ const resources = {
           title: "Filmowa Baza Danych",
           desc: "Aplikacja która wyświetla baze danych filmów przy użyciu API. Na bazie wyszukiwań użytkownika, w sekcji Trending wyświetla te, które są najczęściej wpisywane. Aplikacja jest postawiona na Vercelu i można ją wypróbować. Więcej informacji na GitHubie.",
         },
-        thinkboard: {
-          title: "Thinkboard",
-          desc: "Aplikacja Fullstack, umożliwiająca tworzenie notatek, zapisywanie ich w bazie danych oraz zarządzanie nimi (edycja, usuwanie). Backend stworzony w Node.js z użyciem Express.js i MongoDB, frontend w React z wykorzystaniem Tailwind CSS oraz daisyUI.",
+        sentinel: {
+          title: "System Sentinel - Integrity & Security Auditor",
+          desc: "Narzędzie security stworzone w Pythonie monitorujące integralność kodu (SHA-256), anomalie procesów oraz otwarte porty sieciowe. Wykrywa backdoory w czasie rzeczywistym i działa w kontenerze Docker z dostępem do procesów hosta.",
         },
         quiz: {
           title: "Quizz App",
@@ -185,9 +185,9 @@ const resources = {
           title: "Movie Database",
           desc: "An application that displays a database of movies using an API. Based on user searches, the Trending section displays the most frequently searched titles. The app is deployed on Vercel. More info on GitHub.",
         },
-        thinkboard: {
-          title: "Thinkboard",
-          desc: "Fullstack application enabling note creation, database storage, and management (editing, deleting). Backend built in Node.js with Express.js and MongoDB, frontend in React using Tailwind CSS and daisyUI.",
+        sentinel: {
+          title: "System Sentinel - Integrity & Security Auditor",
+          desc: "Python security tool for real-time monitoring of file integrity (SHA-256), process anomalies, and network ports. Detects backdoors and system threats within a Docker container with host-level visibility.",
         },
         quiz: {
           title: "Quiz App",
