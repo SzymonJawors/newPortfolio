@@ -17,7 +17,7 @@ const resources = {
       about: {
         title_main: "O",
         title_sub: "Mnie",
-        text: "Programuję od kilku lat — zaczynałem w technikum, gdzie poznałem podstawy frontendu. Dziś rozwijam się jako fullstack developer, realizując kursy takie jak CS50 i Meta oraz tworząc własne projekty. Interesuję się sztuczną inteligencją i regularnie poszerzam wiedzę w tym obszarze. Studiuję informatykę, łącząc teorię z praktyką.",
+        text: "Programuję od kilku lat — zaczynałem w technikum, gdzie poznałem podstawy frontendu. Dziś rozwijam się jako Software Developer, realizując kursy takie jak CS50 i Meta oraz tworząc własne projekty. Interesuję się sztuczną inteligencją i regularnie poszerzam wiedzę w tym obszarze. Studiuję informatykę, łącząc teorię z praktyką.",
       },
       tech: {
         title: "Technologie których używam",
@@ -133,7 +133,7 @@ const resources = {
       about: {
         title_main: "About",
         title_sub: "Me",
-        text: "I have been programming for several years — I started in technical school, where I learned the basics of frontend development. Today, I am developing as a full-stack developer, completing courses like CS50 and Meta, and building my own projects. I am interested in artificial intelligence and regularly expand my knowledge in this area. I am currently studying computer science, combining theory with practice.",
+        text: "I have been programming for several years — I started in technical school, where I learned the basics of frontend development. Today, I am developing as a Software Developer, completing courses like CS50 and Meta, and building my own projects. I am interested in artificial intelligence and regularly expand my knowledge in this area. I am currently studying computer science, combining theory with practice.",
       },
       tech: {
         title: "Technologies I Use",
