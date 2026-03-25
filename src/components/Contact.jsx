@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import CV from "/CVpl.pdf";
-import CVen from "/CVen.pdf";
+import CV from "/_Szymon_Jaworski_CVpl.pdf";
+import CVen from "/_Szymon_Jaworski_CVen.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RiFileUserLine } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
