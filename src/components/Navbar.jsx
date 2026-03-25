@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Logo from "./Logo";
-import CV from "/CVpl.pdf";
-import CVen from "/CVen.pdf";
+import CV from "/_Szymon_Jaworski_CVpl.pdf";
+import CVen from "/_Szymon_Jaworski_CVen.pdf";
 import {
   FaLinkedin,
   FaGithub,
