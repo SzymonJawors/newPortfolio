@@ -71,7 +71,7 @@ const Navbar = () => {
               className="transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-500 hover:via-red-500 hover:to-white"
               title="Switch to English"
             >
-              US
+              EN
             </button>
           </div>
 
