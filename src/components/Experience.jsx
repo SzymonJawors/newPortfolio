@@ -44,6 +44,18 @@ const Experience = () => {
       ],
     },
     {
+      year: t("experience.gmina.time"),
+      role: t("experience.gmina.role"),
+      company: t("experience.gmina.company"),
+      description: t("experience.gmina.desc"),
+      technologies: [
+        "Acitve Directory",
+        "Microsoft Office",
+        "Network",
+        "SQL",
+      ],
+    },
+    {
       year: t("experience.tech.time"),
       role: t("experience.tech.role"),
       company: t("experience.tech.company"),

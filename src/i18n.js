@@ -39,13 +39,19 @@ const resources = {
         cs50: {
           role: "CS50 Web Programming with Python and JavaScript",
           company: "HarvardX",
-          time: "09/2024 - 01/2025",
+          time: "03/2025",
           desc: "Kurs z inicjatywy Uniwersytetu Harvardu obejmujący tworzenie aplikacji webowych z użyciem Python (Django), JavaScript (React) oraz baz danych. Kurs skupiał się na tworzeniu RESTful API, bezpieczeństwie aplikacji oraz praktykach CI/CD. Wszystkie projekty z kursu są na moim GitHubie.",
+        },
+        gmina: {
+          role: "Stażysta w dziale IT / Wsparcie Techniczne",
+          company: "Gmina Bargłów Kościelny",
+          time: "10/2024 - 01/2025",
+          desc: "Wsparcie techniczne oraz administracja lokalną infrastrukturą IT. Zajmowałem się konfiguracją stacji roboczych, zarządzaniem uprawnieniami użytkowników w Active Directory oraz diagnozowaniem problemów sieciowych. Ważnym elementem była praca z bazami danych SQL, obejmująca generowanie raportów systemowych.",
         },
         tech: {
           role: "Technik Informatyk",
           company: "Augustowskie Centrum Edukacyjne",
-          time: "2021 - 2025",
+          time: "09/2021 - 04/2025",
           desc: "Podczas nauki zdobyłem umiejętności w tworzeniu aplikacji internetowych, programowaniu (HTML, CSS, JavaScript) oraz administrowaniu sieciami komputerowymi. Uczyłem się także pracy z bazami danych i systemami operacyjnymi.",
         },
       },
@@ -155,13 +161,19 @@ const resources = {
         cs50: {
           role: "CS50 Web Programming with Python and JavaScript",
           company: "HarvardX",
-          time: "09/2024 - 01/2025",
+          time: "03/2025",
           desc: "A course by Harvard University covering web application development using Python (Django), JavaScript (React), and databases. It focused on creating RESTful APIs, application security, and CI/CD practices. All course projects are available on my GitHub.",
+        },
+        gmina: {
+          role: "IT Intern / Technical Support",
+          company: "Muncipality Office of Bargłów Kościelny",
+          time: "10/2024 - 01/2025",
+          desc: "Provided technical support and administered local IT infrastructure. Responsible for workstation configuration, user permission management via Active Directory, and network troubleshooting. A key focus involved working with SQL databases to generate system reports.",
         },
         tech: {
           role: "IT Technician",
           company: "Augustów Education Center",
-          time: "2021 - 2025",
+          time: "09/2021 - 04/2025",
           desc: "During my education, I gained skills in web application development, programming (HTML, CSS, JavaScript), and computer network administration. I also learned to work with databases and operating systems.",
         },
       },
