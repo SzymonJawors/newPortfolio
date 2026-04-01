@@ -66,9 +66,9 @@ const resources = {
             "HotelMotel - System Rezerwacji Hotelowych",
           desc: "HotelMotel to nowoczesna, pełnoprawna aplikacja webowa typu Full-Stack (MERN), umożliwiająca przeglądanie ofert hotelowych, rezerwację pokoi oraz zarządzanie obiektami przez właścicieli. Aplikacja posiada swoje demo na Vercel. Więcej informacji na GitHubie.",
         },
-        movie: {
-          title: "Filmowa Baza Danych",
-          desc: "Aplikacja która wyświetla baze danych filmów przy użyciu API. Na bazie wyszukiwań użytkownika, w sekcji Trending wyświetla te, które są najczęściej wpisywane. Aplikacja jest postawiona na Vercelu i można ją wypróbować. Więcej informacji na GitHubie.",
+        logging: {
+          title: "AI Security Ops - System Analizy Logów LLM",
+          desc: "Zaawansowany system mikroserwisowy w Dockerze do monitorowania i inteligentnej analizy logów w czasie rzeczywistym. Wykorzystuje lokalny model Llama 3.2 do automatycznej detekcji ataków (SQL Injection, Brute-force) i generowania gotowych instrukcji naprawczych. Projekt integruje FastAPI, React oraz mechanizmy Shared Volumes do błyskawicznej wymiany danych systemowych.",
         },
         sentinel: {
           title: "System Sentinel - Integrity & Security Auditor",
@@ -181,9 +181,9 @@ const resources = {
           title: "HotelMotel - Hotel Booking System",
           desc: "HotelMotel is a modern, full-fledged Full-Stack (MERN) web application allowing hotel offer browsing, room booking, and property management for owners. Demo available on Vercel. More info on GitHub.",
         },
-        movie: {
-          title: "Movie Database",
-          desc: "An application that displays a database of movies using an API. Based on user searches, the Trending section displays the most frequently searched titles. The app is deployed on Vercel. More info on GitHub.",
+        logging: {
+          title: "AI Security Ops - LLM Log Analysis System",
+          desc: "A Docker-based microservices system for real-time monitoring and intelligent log analysis. It utilizes a local Llama 3.2 model to automatically detect security threats (SQL Injection, Brute-force) and generate actionable remediation steps. The project integrates FastAPI, React, and Shared Volumes for high-speed system data exchange between isolated containers.",
         },
         sentinel: {
           title: "System Sentinel - Integrity & Security Auditor",

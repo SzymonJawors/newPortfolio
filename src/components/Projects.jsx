@@ -16,22 +16,8 @@ const Projects = () => {
 
   const projects = [
     {
-      title: t("projects.netflix.title"),
-      image: project1,
-      description: t("projects.netflix.desc"),
-      technologies: [
-        "CSS",
-        "TMDbAPI",
-        "Firebase",
-        "JavaScript",
-        "React",
-      ],
-      link: "https://github.com/SzymonJawors/netflix-clone",
-      live: "https://netflix-clone-eight-beta-40.vercel.app",
-    },
-    {
       title: t("projects.jaworai.title"),
-      image: project2,
+      image: project1,
       description: t("projects.jaworai.desc"),
       technologies: [
         "React",
@@ -42,6 +28,19 @@ const Projects = () => {
       ],
       link: "https://github.com/SzymonJawors/JaworAI",
       live: "https://jawor-ai.vercel.app",
+    },
+    {
+      title: t("projects.logging.title"),
+      image: project2,
+      description: t("projects.logging.desc"),
+      technologies: [
+        "Python",
+        "FastAPI",
+        "Docker  & Compose",
+        "Llama 3.2 (LLM)",
+        "SQLite",
+      ],
+      link: "https://github.com/SzymonJawors/ai-log-analyzer",
     },
     {
       title: t("projects.hotel.title"),
@@ -57,22 +56,8 @@ const Projects = () => {
       live: "https://hotel-motel-peach.vercel.app",
     },
     {
-      title: t("projects.movie.title"),
-      image: project4,
-      description: t("projects.movie.desc"),
-      technologies: [
-        "JavaScript",
-        "API",
-        "React",
-        "Tailwind",
-        "Databases",
-      ],
-      link: "https://github.com/SzymonJawors/Moviedatabase-trending",
-      live: "https://moviedatabase-trending.vercel.app",
-    },
-    {
       title: t("projects.sentinel.title"),
-      image: project5,
+      image: project4,
       description: t("projects.sentinel.desc"),
       technologies: [
         "Python",
@@ -81,6 +66,20 @@ const Projects = () => {
         "Security",
       ],
       link: "https://github.com/SzymonJawors/system-sentinel",
+    },
+    {
+      title: t("projects.netflix.title"),
+      image: project5,
+      description: t("projects.netflix.desc"),
+      technologies: [
+        "React",
+        "JavaScript",
+        "Firebase",
+        "CSS",
+        "TMDbAPI",
+      ],
+      link: "https://github.com/SzymonJawors/netflix-clone",
+      live: "https://netflix-clone-eight-beta-40.vercel.app",
     },
     {
       title: t("projects.quiz.title"),
