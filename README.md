@@ -5,7 +5,7 @@
 [![Vite](https://img.shields.io/badge/Vite-7-646cff?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-Personal portfolio website for **Szymon Jaworski** — Full Stack Developer focused on React, Node.js, and AI-powered web applications.
+Personal portfolio website for **Szymon Jaworski** — Software Developer focused on Python, JS, DevOps, and AI-powered applications.
 
 **Live:** [szymonjaworski.dev](https://www.szymonjaworski.dev/)
 

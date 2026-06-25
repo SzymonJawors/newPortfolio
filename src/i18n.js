@@ -12,12 +12,12 @@ const resources = {
         contact: "Kontakt"
       },
       hero: {
-        text: "Tworzę nowoczesne aplikacje webowe w React, JavaScript i Node.js, a Pythona wykorzystuję głównie do pracy z AI, automatyzacją i narzędziami backendowymi. Łączę intuicyjne interfejsy z solidną logiką po stronie serwera, dbając o wydajność i przejrzysty kod. Stale rozwijam swoje umiejętności w obszarze sztucznej inteligencji i projektuję rozwiązania, które realnie ułatwiają użytkownikom pracę.",
+        text: "Jestem Software Developerem skupiającym się na backendzie, technologiach chmurowych oraz rozwiązaniach DevOps. Tworzę wydajną logikę serwerową w Pythonie i Node.js, a także integruję aplikacje z modelami sztucznej inteligencji. Łączę nowoczesne narzędzia, takie jak Docker, AWS i Terraform, z intuicyjnymi interfejsami w React, dbając o bezpieczeństwo, automatyzację i przejrzystość kodu.",
       },
       about: {
         title_main: "O",
         title_sub: "Mnie",
-        text: "Programuję od kilku lat — zaczynałem w technikum, gdzie poznałem podstawy frontendu. Dziś rozwijam się jako Software Developer, realizując kursy takie jak CS50 i Meta oraz tworząc własne projekty. Interesuję się sztuczną inteligencją i regularnie poszerzam wiedzę w tym obszarze. Studiuję informatykę, łącząc teorię z praktyką.",
+        text: "Moja przygoda z programowaniem zaczęła się w technikum informatycznym. Dziś studiuję zaocznie informatykę w Warszawie, dzięki czemu łączę naukę z pełną dyspozycyjnością do pracy. Rozwijam się jako programista z praktycznym doświadczeniem w Pythonie, JS i DevOps, stale poszerzając wiedzę poprzez certyfikowane kursy (m.in. Harvard CS50). W wolnym czasie projektuję własne narzędzia – od aplikacji SaaS po systemy cyberbezpieczeństwa oparte na sztucznej inteligencji.",
       },
       tech: {
         title: "Technologie których używam",
@@ -134,12 +134,12 @@ const resources = {
         contact: "Contact"
       },
       hero: {
-        text: "I build modern web applications using React, JavaScript, and Node.js, leveraging Python primarily for AI, automation, and backend tools. I combine intuitive interfaces with solid server-side logic, focusing on performance and clean code. I continuously develop my skills in artificial intelligence and design solutions that genuinely facilitate users' work.",
+        text: "I am a Software Developer focusing on backend development, cloud technologies, and DevOps practices. I build efficient server-side logic using Python and Node.js, and integrate applications with AI models. I combine modern tools like Docker, AWS, and Terraform with intuitive React frontends, ensuring high performance, automation, and clean code.",
       },
       about: {
         title_main: "About",
         title_sub: "Me",
-        text: "I have been programming for several years — I started in technical school, where I learned the basics of frontend development. Today, I am developing as a Software Developer, completing courses like CS50 and Meta, and building my own projects. I am interested in artificial intelligence and regularly expand my knowledge in this area. I am currently studying computer science, combining theory with practice.",
+        text: "My programming journey began in an IT technical high school. Currently, I am pursuing a part-time Bachelor's degree in Computer Science in Warsaw, which allows me to combine my studies with full-time work availability. I thrive on building hands-on experience in Python, JavaScript, and DevOps, while continuously expanding my knowledge through certified courses like Harvard's CS50. In my free time, I build my own tools—ranging from SaaS platforms to AI-driven cybersecurity applications.",
       },
       tech: {
         title: "Technologies I Use",
