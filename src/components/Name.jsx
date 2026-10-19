@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import profilePic from "../assets/profile.jpg";
 import { motion } from "framer-motion";
+import CV from "/_Szymon_Jaworski_CVpl.pdf";
+import CVen from "/_Szymon_Jaworski_CVen.pdf";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -12,7 +14,8 @@ const container = (delay) => ({
 });
 
 const Name = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentCV = i18n.language === "pl" ? CV : CVen;
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -42,6 +45,27 @@ const Name = () => {
             >
               {t('hero.text')}
             </motion.p>
+            <motion.div
+              variants={container(1.2)}
+              initial="hidden"
+              animate="visible"
+              className="mb-8 flex flex-wrap justify-center gap-4 lg:justify-start"
+            >
+              <a
+                href="#projects"
+                className="rounded-full bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 px-6 py-2 text-sm font-medium text-neutral-950"
+              >
+                {t("hero.cta_projects")}
+              </a>
+              <a
+                href={currentCV}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-neutral-500 px-6 py-2 text-sm font-medium text-neutral-200 transition-colors hover:border-white hover:text-white"
+              >
+                {t("hero.cta_cv")}
+              </a>
+            </motion.div>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">

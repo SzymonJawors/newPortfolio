@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -12,6 +12,15 @@ import certificate6 from "../assets/certificates/certificate-6.png";
 const Certifications = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const { t } = useTranslation();
+
+  useEffect(() => {
+    if (!selectedImage) return undefined;
+    const onKey = (event) => {
+      if (event.key === "Escape") setSelectedImage(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [selectedImage]);
 
   const certificates = [
     {
@@ -80,7 +89,7 @@ const Certifications = () => {
   ];
 
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="certificates" className="border-b border-neutral-900 pb-4">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -130,7 +139,7 @@ const Certifications = () => {
                 (tech, index) => (
                   <span
                     key={index}
-                    className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
+                    className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-300"
                   >
                     {tech}
                   </span>
@@ -143,11 +152,14 @@ const Certifications = () => {
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          aria-label={t("certificates.close_preview")}
           onClick={() => setSelectedImage(null)}
         >
           <motion.img
             src={selectedImage}
-            alt="Powiększony certyfikat"
+            alt={t("certificates.preview_alt")}
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}

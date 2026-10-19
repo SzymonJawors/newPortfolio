@@ -64,10 +64,15 @@ const Contact = () => {
           transition={{ duration: 1 }}
           className={itemStyle}
         >
-          <BiPhoneCall className="text-2xl" />
-          <span className={hoverTextGradient}>
-            {contactDetails.phoneNo}
-          </span>
+          <a
+            href={`tel:${contactDetails.phoneNo.replace(/\s/g, "")}`}
+            className={linkStyle}
+          >
+            <BiPhoneCall className="text-2xl" />
+            <span className={hoverTextGradient}>
+              {contactDetails.phoneNo}
+            </span>
+          </a>
         </motion.div>
 
         <motion.div

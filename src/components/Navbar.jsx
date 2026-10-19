@@ -31,6 +31,7 @@ const Navbar = () => {
     { id: "#tech", label: "nav.tech" },
     { id: "#experience", label: "nav.experience" },
     { id: "#projects", label: "nav.projects" },
+    { id: "#certificates", label: "nav.certificates" },
     { id: "#contact", label: "nav.contact" },
   ];
 
@@ -61,15 +62,25 @@ const Navbar = () => {
           <div className="flex gap-4 items-center pr-4 border-r-2 border-neutral-700 font-bold">
             <button
               onClick={() => i18n.changeLanguage("pl")}
-              className="transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b hover:from-white hover:to-red-600"
+              className={`transition-all duration-300 ${
+                i18n.language === "pl"
+                  ? "text-white"
+                  : "text-neutral-500 hover:text-white"
+              }`}
               title="Zmień na Polski"
+              aria-pressed={i18n.language === "pl"}
             >
               PL
             </button>
             <button
               onClick={() => i18n.changeLanguage("en")}
-              className="transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-500 hover:via-red-500 hover:to-white"
+              className={`transition-all duration-300 ${
+                i18n.language === "en"
+                  ? "text-white"
+                  : "text-neutral-500 hover:text-white"
+              }`}
               title="Switch to English"
+              aria-pressed={i18n.language === "en"}
             >
               EN
             </button>
@@ -109,6 +120,10 @@ const Navbar = () => {
             <button
               onClick={toggleMenu}
               className="text-2xl focus:outline-none"
+              aria-expanded={isMobileMenuOpen}
+              aria-label={
+                isMobileMenuOpen ? t("nav.close_menu") : t("nav.open_menu")
+              }
             >
               {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
