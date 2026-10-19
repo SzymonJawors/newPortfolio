@@ -92,23 +92,23 @@ const Experience = () => {
 
   return (
     <div id="experience" className="border-b border-neutral-900 pb-4">
-      <motion.h1
+      <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl"
       >
         {t("experience.section_title")}
-      </motion.h1>
+      </motion.h2>
 
-      <h2 className="mb-8 text-center text-2xl text-neutral-400">
+      <h3 className="mb-8 text-center text-2xl text-neutral-400">
         {t("experience.work_title")}
-      </h2>
+      </h3>
       <div>{renderItems(work)}</div>
 
-      <h2 className="mb-8 mt-16 text-center text-2xl text-neutral-400">
+      <h3 className="mb-8 mt-16 text-center text-2xl text-neutral-400">
         {t("experience.education_title")}
-      </h2>
+      </h3>
       <div>{renderItems(education)}</div>
     </div>
   );

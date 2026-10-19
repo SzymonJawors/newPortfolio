@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import CV from "/_Szymon_Jaworski_CVpl.pdf";
 import CVen from "/_Szymon_Jaworski_CVen.pdf";
@@ -12,11 +12,21 @@ import { RiFileUserLine } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 
+const links = [
+  { id: "#about", label: "nav.about" },
+  { id: "#tech", label: "nav.tech" },
+  { id: "#experience", label: "nav.experience" },
+  { id: "#projects", label: "nav.projects" },
+  { id: "#certificates", label: "nav.certificates" },
+  { id: "#contact", label: "nav.contact" },
+];
+
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const currentCV = i18n.language === "pl" ? CV : CVen;
   const [isMobileMenuOpen, setIsMobileMenuOpen] =
     useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   const toggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -26,14 +36,23 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const links = [
-    { id: "#about", label: "nav.about" },
-    { id: "#tech", label: "nav.tech" },
-    { id: "#experience", label: "nav.experience" },
-    { id: "#projects", label: "nav.projects" },
-    { id: "#certificates", label: "nav.certificates" },
-    { id: "#contact", label: "nav.contact" },
-  ];
+  useEffect(() => {
+    const updateActiveSection = () => {
+      const marker = window.scrollY + 140;
+      let current = "";
+      links.forEach((link) => {
+        const section = document.getElementById(link.id.slice(1));
+        if (!section) return;
+        const top = section.getBoundingClientRect().top + window.scrollY;
+        if (top <= marker) current = link.id;
+      });
+      setActiveSection(current);
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    return () => window.removeEventListener("scroll", updateActiveSection);
+  }, []);
 
   return (
     <>
@@ -49,9 +68,12 @@ const Navbar = () => {
             <a
               key={link.id}
               href={link.id}
-              className="cursor-pointer transition-all duration-300 
-                         hover:bg-gradient-to-r hover:from-pink-300 hover:via-slate-500 hover:to-purple-500 
-                         hover:bg-clip-text hover:text-transparent"
+              aria-current={activeSection === link.id ? "true" : undefined}
+              className={`cursor-pointer transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:via-slate-500 hover:to-purple-500 hover:bg-clip-text hover:text-transparent ${
+                activeSection === link.id
+                  ? "bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent"
+                  : ""
+              }`}
             >
               {t(link.label)}
             </a>
@@ -107,7 +129,7 @@ const Navbar = () => {
             </a>
             <a
               title="GitHub"
-              href="https://github.com/SzymonJawors?tab=repositories"
+              href="https://github.com/SzymonJawors"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400 transition-colors"
@@ -145,9 +167,12 @@ const Navbar = () => {
                 key={link.id}
                 href={link.id}
                 onClick={handleLinkClick}
-                className="text-lg font-medium transition-all duration-300 
-                           hover:bg-gradient-to-r hover:from-pink-300 hover:via-slate-500 hover:to-purple-500 
-                           hover:bg-clip-text hover:text-transparent"
+                aria-current={activeSection === link.id ? "true" : undefined}
+                className={`text-lg font-medium transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:via-slate-500 hover:to-purple-500 hover:bg-clip-text hover:text-transparent ${
+                  activeSection === link.id
+                    ? "bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent"
+                    : ""
+                }`}
               >
                 {t(link.label)}
               </a>
@@ -169,7 +194,7 @@ const Navbar = () => {
                 <FaLinkedin className="text-2xl" />
               </a>
               <a
-                href="https://github.com/SzymonJawors?tab=repositories"
+                href="https://github.com/SzymonJawors"
                 target="_blank"
                 rel="noopener noreferrer"
               >

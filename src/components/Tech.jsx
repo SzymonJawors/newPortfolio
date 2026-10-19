@@ -7,7 +7,7 @@ import {
   SiFastapi,
   SiPostgresql,
 } from "react-icons/si";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const iconVariants = (duration) => ({
@@ -36,16 +36,17 @@ const technologies = [
 
 const Tech = () => {
   const { t } = useTranslation();
+  const reduceMotion = useReducedMotion();
   return (
     <div id="tech" className="border-b border-neutral-800 pb-24">
-      <motion.h1
+      <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
         {t("tech.title")}
-      </motion.h1>
+      </motion.h2>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
@@ -57,16 +58,19 @@ const Tech = () => {
           return (
             <motion.div
               key={tech.title}
-              variants={iconVariants(tech.duration)}
-              initial="initial"
-              animate="animate"
-              className="rounded-2xl border-4 border-neutral-800 p-4"
+              variants={reduceMotion ? undefined : iconVariants(tech.duration)}
+              initial={reduceMotion ? false : "initial"}
+              animate={reduceMotion ? false : "animate"}
+              className="flex w-28 flex-col items-center gap-3 rounded-2xl border-4 border-neutral-800 p-4"
             >
               <TechIcon
                 title={tech.title}
-                aria-label={tech.title}
+                aria-hidden="true"
                 className={`text-7xl ${tech.color}`}
               />
+              <span className="text-center text-sm text-neutral-300">
+                {tech.title}
+              </span>
             </motion.div>
           );
         })}

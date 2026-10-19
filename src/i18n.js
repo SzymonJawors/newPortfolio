@@ -15,13 +15,14 @@ const resources = {
         close_menu: "Zamknij menu",
       },
       hero: {
-        text: "Jestem Software Developerem skupiającym się na backendzie, technologiach chmurowych oraz rozwiązaniach DevOps. Tworzę wydajną logikę serwerową w Pythonie i Node.js, a także integruję aplikacje z modelami sztucznej inteligencji. Łączę nowoczesne narzędzia, takie jak Docker, AWS i Terraform, z intuicyjnymi interfejsami w React, dbając o bezpieczeństwo, automatyzację i przejrzystość kodu.",
+        text: "Tworzę backend w Pythonie i Node.js oraz podłączam aplikacje do modeli AI. Pracuję z Dockerem, AWS i Reactem, stawiając na automatyzację i czytelny kod. Studiuję zaocznie i jestem dyspozycyjny do pracy na pełen etat.",
         cta_projects: "Zobacz projekty",
         cta_cv: "Pobierz CV",
       },
       about: {
         title_main: "O",
         title_sub: "Mnie",
+        image_alt: "Klawiatura i monitory z kodem",
         text: "Moja przygoda z programowaniem zaczęła się w technikum informatycznym. Dziś studiuję zaocznie informatykę w Warszawie, dzięki czemu łączę naukę z pełną dyspozycyjnością do pracy. Rozwijam się jako programista z praktycznym doświadczeniem w Pythonie, JS i DevOps, stale poszerzając wiedzę poprzez certyfikowane kursy (m.in. Harvard CS50). W wolnym czasie projektuję własne narzędzia – od aplikacji SaaS po systemy cyberbezpieczeństwa oparte na sztucznej inteligencji.",
       },
       tech: {
@@ -128,7 +129,7 @@ const resources = {
         preview_alt: "Powiększony certyfikat",
         meta_front: {
           title: "Meta Front End Developer",
-          desc: "Program obejmował naukę HTML, CSS, JavaScript, React, Git, oraz zasad responsywnego projektowania i dostępności. Podczas kursu realizowałem praktyczne projekty (część z nich jest na GitHubie), w tym budowę w pełni funkcjonalnych aplikacji front-endowych z wykorzystaniem frameworka React oraz integrację z API.",
+          desc: "Program Meta: HTML, CSS, JavaScript, React, Git, responsywność i dostępność. Praktyczne aplikacje z tego kursu są na GitHubie.",
         },
         cs50: {
           title:
@@ -137,11 +138,11 @@ const resources = {
         },
         meta_react: {
           title: "Meta React",
-          desc: "Specjalizacja zdobyta od Meta, większość materiału to praktyka, sam React bez zbędnych informacji. Specjalizacja zawierała dwa kursy Meta Basics i Meta Advanced które trzeba było ukończyć, aby zdobyć specjalizacje.",
+          desc: "Specjalizacja Meta skupiona na praktyce w React. Składa się z kursów Meta Basics i Meta Advanced.",
         },
         react_adv: {
           title: "React Advanced",
-          desc: "Certyfikat potrzebny do specjalizacji Meta React, obszerny kurs, wiele nowych informacji i pracy z API.",
+          desc: "Drugi kurs specjalizacji Meta React: komponenty, stan i praca z API.",
         },
         ibm: {
           title: "IBM Node.js & MongoDB",
@@ -161,6 +162,11 @@ const resources = {
         linkedin: "LinkedIn",
         email_label: "Email",
       },
+      widget: {
+        title: "Asystent portfolio",
+        open: "Otwórz asystenta",
+        close: "Zamknij asystenta",
+      },
     },
   },
   en: {
@@ -176,13 +182,14 @@ const resources = {
         close_menu: "Close menu",
       },
       hero: {
-        text: "I am a Software Developer focusing on backend development, cloud technologies, and DevOps practices. I build efficient server-side logic using Python and Node.js, and integrate applications with AI models. I combine modern tools like Docker, AWS, and Terraform with intuitive React frontends, ensuring high performance, automation, and clean code.",
+        text: "I build backends in Python and Node.js and connect apps to AI models. I work with Docker, AWS, and React, focusing on automation and readable code. I study part-time and I am available for full-time work.",
         cta_projects: "View projects",
         cta_cv: "Download CV",
       },
       about: {
         title_main: "About",
         title_sub: "Me",
+        image_alt: "Keyboard and monitors showing code",
         text: "My programming journey began in an IT technical high school. Currently, I am pursuing a part-time Bachelor's degree in Computer Science in Warsaw, which allows me to combine my studies with full-time work availability. I thrive on building hands-on experience in Python, JavaScript, and DevOps, while continuously expanding my knowledge through certified courses like Harvard's CS50. In my free time, I build my own tools—ranging from SaaS platforms to AI-driven cybersecurity applications.",
       },
       tech: {
@@ -289,7 +296,7 @@ const resources = {
         preview_alt: "Enlarged certificate",
         meta_front: {
           title: "Meta Front End Developer",
-          desc: "The program covered HTML, CSS, JavaScript, React, Git, responsive design, and accessibility principles. During the course, I completed practical projects (available on GitHub), including building fully functional front-end apps with React and API integration.",
+          desc: "Meta program: HTML, CSS, JavaScript, React, Git, responsive design, and accessibility. The practical apps from this course are on GitHub.",
         },
         cs50: {
           title:
@@ -298,11 +305,11 @@ const resources = {
         },
         meta_react: {
           title: "Meta React",
-          desc: "Specialization earned from Meta, mostly practical material focusing on React without unnecessary fluff. Included two mandatory courses: Meta Basics and Meta Advanced.",
+          desc: "Meta specialization focused on hands-on React. It is made of the Meta Basics and Meta Advanced courses.",
         },
         react_adv: {
           title: "React Advanced",
-          desc: "Certificate required for the Meta React specialization. An extensive course with a lot of new information and API work.",
+          desc: "Second course in the Meta React specialization: components, state, and working with APIs.",
         },
         ibm: {
           title: "IBM Node.js & MongoDB",
@@ -321,6 +328,11 @@ const resources = {
         github: "GitHub",
         linkedin: "LinkedIn",
         email_label: "Email",
+      },
+      widget: {
+        title: "Portfolio assistant",
+        open: "Open assistant",
+        close: "Close assistant",
       },
     },
   },

@@ -5,9 +5,9 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <div id="about" className="border-b border-neutral-900 pb-4">
-      <h1 className="my-20 text-center text-4xl">
+      <h2 className="my-20 text-center text-4xl">
         {t('about.title_main')} <span className="text-neutral-500">{t('about.title_sub')}</span>
-      </h1>
+      </h2>
       <div className="flex flex-wrap">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -19,7 +19,7 @@ const About = () => {
             <img
               className="rounded-2xl"
               src={aboutImg}
-              alt="about"
+              alt={t("about.image_alt")}
             />
           </div>
         </motion.div>

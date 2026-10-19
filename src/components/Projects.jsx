@@ -38,7 +38,7 @@ const Projects = () => {
       technologies: [
         "Python",
         "FastAPI",
-        "Docker  & Compose",
+        "Docker & Compose",
         "Llama 3.2 (LLM)",
         "SQLite",
       ],
@@ -107,8 +107,13 @@ const Projects = () => {
     const onKey = (event) => {
       if (event.key === "Escape") setSelectedProject(null);
     };
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKey);
+    };
   }, [selectedProject]);
 
   const featured = projects.filter((project) => !project.practice);
@@ -190,19 +195,19 @@ const Projects = () => {
       id="projects"
       className="border-b border-neutral-900 pb-4"
     >
-      <motion.h1
+      <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl"
       >
         {t("projects.section_title")}
-      </motion.h1>
+      </motion.h2>
       <div>{featured.map(renderProject)}</div>
 
-      <h2 className="mt-16 mb-8 text-center text-2xl text-neutral-400">
+      <h3 className="mt-16 mb-8 text-center text-2xl text-neutral-400">
         {t("projects.practice_title")}
-      </h2>
+      </h3>
       <div>{practice.map(renderProject)}</div>
 
       {selectedProject && (
