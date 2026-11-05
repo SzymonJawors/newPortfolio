@@ -15,15 +15,14 @@ const resources = {
         close_menu: "Zamknij menu",
       },
       hero: {
-        text: "Tworzę backend w Pythonie i Node.js oraz podłączam aplikacje do modeli AI. Pracuję z Dockerem, AWS i Reactem, stawiając na automatyzację i czytelny kod. Studiuję zaocznie i jestem dyspozycyjny do pracy na pełen etat.",
+        text: "Tworzę backend w Pythonie i Node.js oraz podłączam aplikacje do modeli AI. Pracuję z Dockerem, AWS i Reactem, stawiając na automatyzację i czytelny kod. Jestem dyspozycyjny do pracy na pełen etat.",
         cta_projects: "Zobacz projekty",
         cta_cv: "Pobierz CV",
       },
       about: {
         title_main: "O",
         title_sub: "Mnie",
-        image_alt: "Klawiatura i monitory z kodem",
-        text: "Moja przygoda z programowaniem zaczęła się w technikum informatycznym. Dziś studiuję zaocznie informatykę w Warszawie, dzięki czemu łączę naukę z pełną dyspozycyjnością do pracy. Rozwijam się jako programista z praktycznym doświadczeniem w Pythonie, JS i DevOps, stale poszerzając wiedzę poprzez certyfikowane kursy (m.in. Harvard CS50). W wolnym czasie projektuję własne narzędzia – od aplikacji SaaS po systemy cyberbezpieczeństwa oparte na sztucznej inteligencji.",
+        text: "Programowania uczę się już od technikum informatycznego. Studia zaoczne w Warszawie zostawiają mi cały tydzień na pracę, a poza zajęciami buduję własne narzędzia, głównie aplikacje SaaS i agentów AI.",
       },
       tech: {
         title: "Technologie, których używam",
@@ -37,18 +36,6 @@ const resources = {
           company: "Uniwersytet WSB Merito w Warszawie",
           time: "10/2025 - obecnie",
           desc: "Studia inżynierskie zaoczne. Program obejmuje Pythona, JavaScript oraz React, Angular, Node.js i Django, a także bazy danych i elementy sztucznej inteligencji.",
-        },
-        meta: {
-          role: "Kurs Meta Front-End Developer",
-          company: "Meta",
-          time: "06/2025 - 10/2025",
-          desc: "Kurs praktyczny: aplikacje w React, interfejsy w Figma i praca z Git. Certyfikat i zakres są w sekcji certyfikatów.",
-        },
-        cs50: {
-          role: "CS50 Web Programming with Python and JavaScript",
-          company: "HarvardX",
-          time: "03/2025",
-          desc: "Kurs HarvardX o aplikacjach webowych (Django, React, REST i bezpieczeństwo). Projekty są na GitHubie, certyfikat w sekcji poniżej.",
         },
         gmina: {
           role: "Stażysta IT / wsparcie techniczne",
@@ -129,20 +116,12 @@ const resources = {
         preview_alt: "Powiększony certyfikat",
         meta_front: {
           title: "Meta Front End Developer",
-          desc: "Program Meta: HTML, CSS, JavaScript, React, Git, responsywność i dostępność. Praktyczne aplikacje z tego kursu są na GitHubie.",
+          desc: "Program Meta (9 kursów): HTML, CSS, JavaScript, React Basics i Advanced React, Git, UX oraz dostępność. Praktyczne aplikacje z tego kursu są na GitHubie.",
         },
         cs50: {
           title:
             "Certyfikat CS50W Web Programming with Python and JavaScript",
           desc: "Certyfikat z HarvardX, bardzo praktyczne zadania i projekty, większość z użyciem Pythona i Reacta, również dużo o bezpieczeństwie aplikacji i CI/CD, wszystkie pliki z projektów można znaleźć na moim profilu GitHub.",
-        },
-        meta_react: {
-          title: "Meta React",
-          desc: "Specjalizacja Meta skupiona na praktyce w React. Składa się z kursów Meta Basics i Meta Advanced.",
-        },
-        react_adv: {
-          title: "React Advanced",
-          desc: "Drugi kurs specjalizacji Meta React: komponenty, stan i praca z API.",
         },
         ibm: {
           title: "IBM Node.js & MongoDB",
@@ -151,6 +130,10 @@ const resources = {
         genai: {
           title: "GenAI Job Simulation",
           desc: "Z zamiłowania do AI, symulacja pracy gdzie tworzony był bot AI do analizy finansów.",
+        },
+        ai_eng: {
+          title: "Applied AI Engineering Fundamentals",
+          desc: "Kurs master.dev prowadzony przez Scotta Mossa. Do istniejącej aplikacji dodałem czat z agentem AI, a potem ewaluacje, które mierzą jakość odpowiedzi. Dalej: context engineering, narzędzia agenta i RAG oraz pętla z produkcji, która na podstawie realnych zapytań podnosi trafność.",
         },
       },
       contact: {
@@ -182,15 +165,14 @@ const resources = {
         close_menu: "Close menu",
       },
       hero: {
-        text: "I build backends in Python and Node.js and connect apps to AI models. I work with Docker, AWS, and React, focusing on automation and readable code. I study part-time and I am available for full-time work.",
+        text: "I build backends in Python and Node.js and connect apps to AI models. I work with Docker, AWS, and React, focusing on automation and readable code. I am available for full-time work.",
         cta_projects: "View projects",
         cta_cv: "Download CV",
       },
       about: {
         title_main: "About",
         title_sub: "Me",
-        image_alt: "Keyboard and monitors showing code",
-        text: "My programming journey began in an IT technical high school. Currently, I am pursuing a part-time Bachelor's degree in Computer Science in Warsaw, which allows me to combine my studies with full-time work availability. I thrive on building hands-on experience in Python, JavaScript, and DevOps, while continuously expanding my knowledge through certified courses like Harvard's CS50. In my free time, I build my own tools—ranging from SaaS platforms to AI-driven cybersecurity applications.",
+        text: "I have been learning to program since IT technical high school. Part-time studies in Warsaw leave the week open for work, and outside class I build my own tools, mostly SaaS apps and AI agents.",
       },
       tech: {
         title: "Technologies I Use",
@@ -204,18 +186,6 @@ const resources = {
           company: "WSB Merito University in Warsaw",
           time: "10/2025 - Present",
           desc: "Part-time engineering degree. The program covers Python, JavaScript, React, Angular, Node.js, and Django, plus databases and an introduction to artificial intelligence.",
-        },
-        meta: {
-          role: "Meta Front-End Developer Course",
-          company: "Meta",
-          time: "06/2025 - 10/2025",
-          desc: "Practical course: React apps, Figma interfaces, and Git. The certificate and scope are in the certifications section.",
-        },
-        cs50: {
-          role: "CS50 Web Programming with Python and JavaScript",
-          company: "HarvardX",
-          time: "03/2025",
-          desc: "HarvardX course on web apps (Django, React, REST, and security). Projects are on GitHub; the certificate is in the section below.",
         },
         gmina: {
           role: "IT Intern / Technical Support",
@@ -296,20 +266,12 @@ const resources = {
         preview_alt: "Enlarged certificate",
         meta_front: {
           title: "Meta Front End Developer",
-          desc: "Meta program: HTML, CSS, JavaScript, React, Git, responsive design, and accessibility. The practical apps from this course are on GitHub.",
+          desc: "Meta program (9 courses): HTML, CSS, JavaScript, React Basics and Advanced React, Git, UX, and accessibility. The practical apps from this course are on GitHub.",
         },
         cs50: {
           title:
             "CS50W Web Programming with Python and JavaScript",
           desc: "Certificate from HarvardX featuring very practical tasks and projects, mostly using Python and React. Covered application security and CI/CD. All project files can be found on my GitHub profile.",
-        },
-        meta_react: {
-          title: "Meta React",
-          desc: "Meta specialization focused on hands-on React. It is made of the Meta Basics and Meta Advanced courses.",
-        },
-        react_adv: {
-          title: "React Advanced",
-          desc: "Second course in the Meta React specialization: components, state, and working with APIs.",
         },
         ibm: {
           title: "IBM Node.js & MongoDB",
@@ -318,6 +280,10 @@ const resources = {
         genai: {
           title: "GenAI Job Simulation",
           desc: "Driven by a passion for AI, a job simulation involving the creation of an AI bot for financial analysis.",
+        },
+        ai_eng: {
+          title: "Applied AI Engineering Fundamentals",
+          desc: "A master.dev course taught by Scott Moss. I added an agent chat to an existing app, then built evals that measure answer quality. The work also covered context engineering, agent tools, and RAG, plus a production feedback loop that makes answers more accurate from real usage.",
         },
       },
       contact: {

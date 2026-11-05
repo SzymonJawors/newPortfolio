@@ -33,20 +33,6 @@ const Experience = () => {
       description: t("experience.tech.desc"),
       technologies: ["JavaScript", "HTML", "CSS", "MySQL"],
     },
-    {
-      year: t("experience.meta.time"),
-      role: t("experience.meta.role"),
-      company: t("experience.meta.company"),
-      description: t("experience.meta.desc"),
-      technologies: ["React", "Figma", "Git"],
-    },
-    {
-      year: t("experience.cs50.time"),
-      role: t("experience.cs50.role"),
-      company: t("experience.cs50.company"),
-      description: t("experience.cs50.desc"),
-      technologies: ["Python", "Django", "React"],
-    },
   ];
 
   const renderItems = (items) =>

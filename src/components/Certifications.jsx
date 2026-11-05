@@ -7,7 +7,6 @@ import certificate2 from "../assets/certificates/certificate-2.png";
 import certificate3 from "../assets/certificates/certificate-3.png";
 import certificate4 from "../assets/certificates/certificate-4.png";
 import certificate5 from "../assets/certificates/certificate-5.png";
-import certificate6 from "../assets/certificates/certificate-6.png";
 
 const Certifications = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -29,21 +28,8 @@ const Certifications = () => {
 
   const certificates = [
     {
-      title: t("certificates.meta_front.title"),
-      image: certificate1,
-      description: t("certificates.meta_front.desc"),
-      technologies: [
-        "HTML",
-        "SCSS",
-        "React",
-        "JavaScript",
-        "API",
-        "UI/UX",
-      ],
-    },
-    {
       title: t("certificates.cs50.title"),
-      image: certificate2,
+      image: certificate1,
       description: t("certificates.cs50.desc"),
       technologies: [
         "HTML",
@@ -56,26 +42,27 @@ const Certifications = () => {
       ],
     },
     {
-      title: t("certificates.meta_react.title"),
-      image: certificate3,
-      description: t("certificates.meta_react.desc"),
-      technologies: ["HTML", "CSS", "React", "JavaScript"],
-    },
-    {
-      title: t("certificates.react_adv.title"),
-      image: certificate4,
-      description: t("certificates.react_adv.desc"),
+      title: t("certificates.meta_front.title"),
+      image: certificate2,
+      description: t("certificates.meta_front.desc"),
       technologies: [
-        "CSS",
+        "HTML",
+        "SCSS",
+        "React",
         "JavaScript",
         "API",
-        "React",
-        "Bootstrap",
+        "UI/UX",
       ],
     },
     {
+      title: t("certificates.ai_eng.title"),
+      image: certificate3,
+      description: t("certificates.ai_eng.desc"),
+      technologies: ["AI", "Agents", "RAG", "Evals"],
+    },
+    {
       title: t("certificates.ibm.title"),
-      image: certificate5,
+      image: certificate4,
       description: t("certificates.ibm.desc"),
       technologies: [
         "Express.js",
@@ -87,7 +74,7 @@ const Certifications = () => {
     },
     {
       title: t("certificates.genai.title"),
-      image: certificate6,
+      image: certificate5,
       description: t("certificates.genai.desc"),
       technologies: ["AI", "LLM", "GenAI"],
     },
