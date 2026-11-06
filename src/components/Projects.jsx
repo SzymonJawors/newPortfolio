@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
-import project3 from "../assets/projects/project-3.png";
+import infraagent from "../assets/projects/infraagent.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
 import project6 from "../assets/projects/project-6.png";
@@ -29,6 +29,21 @@ const Projects = () => {
       ],
       link: "https://github.com/SzymonJawors/JaworAI",
       live: "https://jawor-ai.vercel.app",
+    },
+    {
+      title: t("projects.infraagent.title"),
+      image: infraagent,
+      description: t("projects.infraagent.desc"),
+      points: t("projects.infraagent.points", { returnObjects: true }),
+      technologies: [
+        "OpenAI",
+        "LangGraph",
+        "Terraform",
+        "AWS",
+        "Checkov",
+        "FastAPI",
+      ],
+      link: "https://github.com/SzymonJawors/infraAgent",
     },
     {
       title: t("projects.logging.title"),
@@ -56,20 +71,6 @@ const Projects = () => {
         "Linux",
       ],
       link: "https://github.com/SzymonJawors/system-sentinel",
-    },
-    {
-      title: t("projects.hotel.title"),
-      image: project3,
-      description: t("projects.hotel.desc"),
-      points: t("projects.hotel.points", { returnObjects: true }),
-      technologies: [
-        "React",
-        "Express.js",
-        "Node.js",
-        "MongoDB",
-      ],
-      link: "https://github.com/SzymonJawors/HotelMotel",
-      live: "https://hotel-motel-peach.vercel.app",
     },
     {
       title: t("projects.netflix.title"),
@@ -132,10 +133,8 @@ const Projects = () => {
       >
         <img
           src={project.image}
-          width={250}
-          height={250}
           alt={project.title}
-          className="mb-6 cursor-pointer rounded transition-transform duration-300 hover:scale-110"
+          className="mb-6 aspect-video w-full max-w-[280px] cursor-pointer rounded object-cover object-top transition-transform duration-300 hover:scale-110"
           onClick={() => setSelectedProject(project.image)}
         />
       </motion.div>

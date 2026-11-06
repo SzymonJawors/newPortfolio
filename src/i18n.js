@@ -73,13 +73,14 @@ const resources = {
             "Responsywny interfejs w React.",
           ],
         },
-        hotel: {
-          title: "HotelMotel — system rezerwacji",
-          desc: "Aplikacja MERN do przeglądania hoteli, rezerwacji pokoi i panelu właściciela. Demo na Vercel.",
+        infraagent: {
+          title: "InfraAgent — agent Terraform na AWS",
+          desc: "Backend w FastAPI i UI w React. Agent w pętli ReAct zapisuje HCL, a reviewer odpala terraform fmt, init, validate, Checkov i plan. Apply i destroy to osobne operacje API, odblokowywane artefaktem zgody.",
           points: [
-            "Oferty obiektów i rezerwacja pokoi po stronie gościa.",
-            "Panel właściciela do zarządzania obiektami.",
-            "API w Express i dane w MongoDB.",
+            "Narzędzia agenta: read_workspace, write_tf, check_infrastructure. Apply i destroy nie wchodzą do pętli czatu.",
+            "Po zapisie: fmt, init, validate, skan Checkov i terraform plan, z ograniczoną liczbą przejść naprawczych.",
+            "Approval wiąże sesję, SHA-256 plików .tf i output planu. TTL 30 minut, niezgodny digest zwraca 409.",
+            "Estymata z AWS Pricing API oraz eval, który scoruje ślad wywołań narzędzi.",
           ],
         },
         logging: {
@@ -223,13 +224,14 @@ const resources = {
             "Responsive React interface.",
           ],
         },
-        hotel: {
-          title: "HotelMotel — booking system",
-          desc: "MERN app for browsing hotels, booking rooms, and an owner dashboard. Demo on Vercel.",
+        infraagent: {
+          title: "InfraAgent — AWS Terraform agent",
+          desc: "FastAPI backend and React UI. A ReAct agent writes HCL, and a reviewer runs terraform fmt, init, validate, Checkov, and plan. Apply and destroy are separate API operations, unlocked by an approval artifact.",
           points: [
-            "Property listings and room booking for guests.",
-            "Owner dashboard for managing properties.",
-            "Express API with data stored in MongoDB.",
+            "Agent tools: read_workspace, write_tf, check_infrastructure. Apply and destroy stay outside the chat loop.",
+            "After each write: fmt, init, validate, a Checkov scan, and terraform plan, with bounded repair passes.",
+            "The approval artifact binds the session, a SHA-256 digest of the .tf files, and the plan output. TTL is 30 minutes; a mismatched digest returns 409.",
+            "AWS Pricing API estimates and an eval that scores the tool-call trace.",
           ],
         },
         logging: {
