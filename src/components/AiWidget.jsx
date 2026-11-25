@@ -18,6 +18,7 @@ const AiWidget = () => {
           <iframe
             src="https://jawor-ai-widget-bot.vercel.app"
             loading="lazy"
+            referrerPolicy="no-referrer"
             className="h-full w-full border-none bg-[#0a0a0a]"
             title={t("widget.title")}
           />
