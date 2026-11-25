@@ -4,6 +4,10 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   pl: {
     translation: {
+      meta: {
+        title: "Szymon Jaworski — Software Engineer (Backend & AI)",
+        description: "Szymon Jaworski, Software Engineer (Backend & AI) z Warszawy. Python, FastAPI, Node.js, AWS i autonomiczni agenci AI. Projekty, doświadczenie i kontakt.",
+      },
       nav: {
         about: "O mnie",
         tech: "Technologie",
@@ -15,17 +19,20 @@ const resources = {
         close_menu: "Zamknij menu",
       },
       hero: {
-        text: "Tworzę backend w Pythonie i Node.js oraz podłączam aplikacje do modeli AI. Pracuję z Dockerem, AWS i Reactem, stawiając na automatyzację i czytelny kod. Jestem dyspozycyjny do pracy na pełen etat.",
+        role: "Software Engineer (Backend & AI)",
+        text: "Buduję backend, frontend w Pythonie i Node.js oraz autonomicznych agentów AI. Łączę FastAPI, AWS i Terraform, automatyzując projektowanie i walidację infrastruktury. Jestem dyspozycyjny do pracy na pełen etat.",
         cta_projects: "Zobacz projekty",
         cta_cv: "Pobierz CV",
+        cta_contact: "Napisz do mnie",
       },
       about: {
         title_main: "O",
         title_sub: "Mnie",
-        text: "Programowania uczę się już od technikum informatycznego. Studia zaoczne w Warszawie zostawiają mi cały tydzień na pracę, a poza zajęciami buduję własne narzędzia, głównie aplikacje SaaS i agentów AI.",
+        text: "Jestem inżynierem oprogramowania specjalizującym się w backendzie i AI. Buduję aplikacje wykorzystujące modele językowe, autonomicznych agentów oraz infrastrukturę chmurową. Pracuję z Pythonem, FastAPI, Node.js, AWS i Terraformem. Studiuję zaocznie, dzięki czemu jestem dyspozycyjny do pracy na pełen etat.",
       },
       tech: {
         title: "Technologie, których używam",
+        subtitle: "Backend, chmura i narzędzia, których używam w projektach.",
       },
       experience: {
         section_title: "Doświadczenie i edukacja",
@@ -58,13 +65,14 @@ const resources = {
       },
       projects: {
         section_title: "Projekty",
-        click_test: "Kliknij by przetestować",
-        click_code: "KOD",
+        click_test: "Otwórz demo",
+        view_code: "Zobacz kod na GitHubie",
         practice_title: "Projekty z kursów",
         close_preview: "Zamknij podgląd",
         preview_alt: "Powiększony zrzut projektu",
         jaworai: {
           title: "JaworAI",
+          date: "11/2025",
           desc: "Aplikacja SaaS z asystentem AI: konta użytkowników, czat i plan premium. Hostowana na Vercel.",
           points: [
             "Logowanie i zarządzanie kontami oparte na Clerk.",
@@ -75,6 +83,7 @@ const resources = {
         },
         infraagent: {
           title: "InfraAgent — agent Terraform na AWS",
+          date: "11/2026",
           desc: "Backend w FastAPI i UI w React. Agent w pętli ReAct zapisuje HCL, a reviewer odpala terraform fmt, init, validate, Checkov i plan. Apply i destroy to osobne operacje API, odblokowywane artefaktem zgody.",
           points: [
             "Narzędzia agenta: read_workspace, write_tf, check_infrastructure. Apply i destroy nie wchodzą do pętli czatu.",
@@ -85,6 +94,7 @@ const resources = {
         },
         logging: {
           title: "AI Security Ops — analiza logów LLM",
+          date: "03/2026",
           desc: "Mikroserwisy w Dockerze do analizy logów w czasie rzeczywistym lokalnym modelem językowym.",
           points: [
             "Architektura oparta na czterech kontenerach Docker.",
@@ -113,6 +123,7 @@ const resources = {
       },
       certificates: {
         section_title: "Certyfikaty",
+        view_certificate: "Powiększ certyfikat",
         close_preview: "Zamknij podgląd certyfikatu",
         preview_alt: "Powiększony certyfikat",
         meta_front: {
@@ -130,6 +141,7 @@ const resources = {
         },
         genai: {
           title: "GenAI Job Simulation",
+          issuer: "Symulacja pracy",
           desc: "Z zamiłowania do AI, symulacja pracy gdzie tworzony był bot AI do analizy finansów.",
         },
         ai_eng: {
@@ -155,6 +167,10 @@ const resources = {
   },
   en: {
     translation: {
+      meta: {
+        title: "Szymon Jaworski — Software Engineer (Backend & AI)",
+        description: "Szymon Jaworski, Software Engineer (Backend & AI) in Warsaw. Python, FastAPI, Node.js, AWS, Terraform, and autonomous AI agents. Projects, experience, and contact.",
+      },
       nav: {
         about: "About",
         tech: "Tech Stack",
@@ -166,17 +182,20 @@ const resources = {
         close_menu: "Close menu",
       },
       hero: {
-        text: "I build backends in Python and Node.js and connect apps to AI models. I work with Docker, AWS, and React, focusing on automation and readable code. I am available for full-time work.",
+        role: "Software Engineer (Backend & AI)",
+        text: "I build backends, frontends in Python and Node.js and autonomous AI agents. I use FastAPI, AWS, and Terraform to automate infrastructure design and validation. Available for full-time work.",
         cta_projects: "View projects",
         cta_cv: "Download CV",
+        cta_contact: "Email me",
       },
       about: {
         title_main: "About",
         title_sub: "Me",
-        text: "I have been learning to program since IT technical high school. Part-time studies in Warsaw leave the week open for work, and outside class I build my own tools, mostly SaaS apps and AI agents.",
+        text: "I am a software engineer focused on backend development and AI. I build applications with language models, autonomous agents, and cloud infrastructure. My core tools include Python, FastAPI, Node.js, AWS, and Terraform. I study part-time and am available for full-time work.",
       },
       tech: {
         title: "Technologies I Use",
+        subtitle: "Backend, cloud, and tools I use in my projects.",
       },
       experience: {
         section_title: "Experience and education",
@@ -209,13 +228,14 @@ const resources = {
       },
       projects: {
         section_title: "Projects",
-        click_test: "Click to test live",
-        click_code: "CODE",
+        click_test: "Open live demo",
+        view_code: "View source on GitHub",
         practice_title: "Course projects",
         close_preview: "Close preview",
         preview_alt: "Enlarged project screenshot",
         jaworai: {
           title: "JaworAI",
+          date: "11/2025",
           desc: "SaaS app with an AI assistant: user accounts, chat, and a premium plan. Hosted on Vercel.",
           points: [
             "Sign-in and account management built with Clerk.",
@@ -226,6 +246,7 @@ const resources = {
         },
         infraagent: {
           title: "InfraAgent — AWS Terraform agent",
+          date: "11/2026",
           desc: "FastAPI backend and React UI. A ReAct agent writes HCL, and a reviewer runs terraform fmt, init, validate, Checkov, and plan. Apply and destroy are separate API operations, unlocked by an approval artifact.",
           points: [
             "Agent tools: read_workspace, write_tf, check_infrastructure. Apply and destroy stay outside the chat loop.",
@@ -236,6 +257,7 @@ const resources = {
         },
         logging: {
           title: "AI Security Ops — LLM log analysis",
+          date: "03/2026",
           desc: "Docker microservices for real-time log analysis with a local language model.",
           points: [
             "Architecture based on four Docker containers.",
@@ -264,6 +286,7 @@ const resources = {
       },
       certificates: {
         section_title: "Certifications",
+        view_certificate: "View certificate",
         close_preview: "Close certificate preview",
         preview_alt: "Enlarged certificate",
         meta_front: {
@@ -281,6 +304,7 @@ const resources = {
         },
         genai: {
           title: "GenAI Job Simulation",
+          issuer: "Job simulation",
           desc: "Driven by a passion for AI, a job simulation involving the creation of an AI bot for financial analysis.",
         },
         ai_eng: {

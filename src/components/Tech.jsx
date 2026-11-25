@@ -6,6 +6,9 @@ import {
   SiAmazonwebservices,
   SiFastapi,
   SiPostgresql,
+  SiTerraform,
+  SiLinux,
+  SiGithubactions,
 } from "react-icons/si";
 import { motion, useReducedMotion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -32,6 +35,9 @@ const technologies = [
   { icon: SiPostgresql, title: "PostgreSQL", color: "text-blue-400", duration: 1.9 },
   { icon: SiDocker, title: "Docker", color: "text-sky-500", duration: 2.3 },
   { icon: SiAmazonwebservices, title: "AWS", color: "text-orange-400", duration: 1.7 },
+  { icon: SiTerraform, title: "Terraform", color: "text-violet-400", duration: 2.2 },
+  { icon: SiLinux, title: "Linux", color: "text-amber-300", duration: 1.6 },
+  { icon: SiGithubactions, title: "GitHub Actions", color: "text-blue-300", duration: 2.4 },
 ];
 
 const Tech = () => {
@@ -47,6 +53,7 @@ const Tech = () => {
       >
         {t("tech.title")}
       </motion.h2>
+      <p className="-mt-12 mb-10 text-center text-neutral-400">{t("tech.subtitle")}</p>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}

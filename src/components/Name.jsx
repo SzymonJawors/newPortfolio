@@ -35,7 +35,7 @@ const Name = () => {
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Software Developer
+              {t("hero.role")}
             </motion.span>
             <motion.p
               variants={container(1)}
@@ -64,6 +64,12 @@ const Name = () => {
                 className="rounded-full border border-neutral-500 px-6 py-2 text-sm font-medium text-neutral-200 transition-colors hover:border-white hover:text-white"
               >
                 {t("hero.cta_cv")}
+              </a>
+              <a
+                href="mailto:jawor12325@gmail.com"
+                className="rounded-full border border-purple-300/60 px-6 py-2 text-sm font-medium text-purple-100 transition-colors hover:border-purple-200 hover:bg-purple-300/10"
+              >
+                {t("hero.cta_contact")}
               </a>
             </motion.div>
           </div>
